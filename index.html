@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第32回みやぎ建築未来賞2026｜公開審査・表彰式　11月14日（土）東北工業大学</title>
+<meta name="description" content="第32回みやぎ建築未来賞2026の公開審査と表彰式。宮城県内の高校生・専門学校生・大学校生が、テーマ『わたし』らしく輝ける住まいの作品を発表します。2026年11月14日（土）東北工業大学 八木山キャンパス 1号館3階。入場無料、どなたでも観覧できます。">
+<link rel="canonical" href="https://miyagikentikumiraisyo.github.io/">
+<meta property="og:url" content="https://miyagikentikumiraisyo.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="みやぎ建築未来賞">
+<meta property="og:title" content="第32回みやぎ建築未来賞2026｜公開審査・表彰式">
+<meta property="og:description" content="第32回みやぎ建築未来賞2026の公開審査と表彰式。宮城県内の高校生・専門学校生・大学校生が、テーマ『わたし』らしく輝ける住まいの作品を発表します。2026年11月14日（土）東北工業大学 八木山キャンパス 1号館3階。入場無料、どなたでも観覧できます。">
+<meta property="og:image" content="https://miyagikentikumiraisyo.github.io/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="昨年の大賞作品の模型写真">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta name="theme-color" content="#08090a">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
+<style>
+/* F案：作品が主役 —— 黒地。受賞作を全画面で切り替え、文字は最小限。写真に光を当てる */
+html{color-scheme:dark}
+:root{
+  --bg:#08090a; --card:#111315; --ink:#f2f4f3; --ink2:#a0a6a4; --ink3:#8a918f;
+  --line:#23262a;
+  --gr:#39d98a; --gr2:#6ce8ab; --ki:#e9c46a; --aka:#ff6b52;
+  --go:"Noto Sans JP",'Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif;
+  --mi:"Shippori Mincho B1",'Hiragino Mincho ProN','Yu Mincho',serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--go);font-size:15px;line-height:1.85;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.w{max-width:1140px;margin:0 auto;padding:0 24px}
+a{color:var(--gr)}
+:focus-visible{outline:3px solid var(--gr);outline-offset:3px}
+
+/* ===== 幕開け：作品が画面を占める ===== */
+.hero{position:relative;overflow:hidden;background:var(--bg);color:#fff;isolation:isolate;
+  min-height:min(82vh,760px);display:flex;align-items:flex-end}
+.tiles{position:absolute;inset:0;z-index:-2}
+.tiles i{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;
+  animation:show 21s linear infinite;transform:scale(1.06)}
+.tiles i:nth-child(1){animation-delay:0s}
+.tiles i:nth-child(2){animation-delay:7s}
+.tiles i:nth-child(3){animation-delay:14s}
+@keyframes show{0%{opacity:0;transform:scale(1.1)}5%{opacity:1}28%{opacity:1;transform:scale(1.02)}36%{opacity:0}100%{opacity:0}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(8,9,10,.62) 0%,rgba(8,9,10,.34) 38%,rgba(8,9,10,.94) 88%)}
+.heroin{max-width:1140px;margin:0 auto;padding:0 24px;padding-block:clamp(90px,16vw,180px) clamp(34px,5vw,58px);width:100%}
+.eyeb{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:0 0 clamp(14px,2.4vw,20px);
+  font-size:11px;font-weight:700;letter-spacing:.34em;color:var(--ink2)}
+.eyeb b{background:var(--gr);color:#08090a;padding:4px 13px;letter-spacing:.14em;font-size:12.5px;font-weight:900}
+.title{margin:0;font-family:var(--mi);font-weight:800;line-height:1.16;letter-spacing:.03em;
+  font-size:clamp(40px,10.5vw,116px);display:flex;flex-wrap:wrap;
+  text-shadow:0 2px 40px rgba(0,0,0,.55)}
+.title span{display:inline-block;overflow:hidden;line-height:1.16;padding-bottom:.02em}
+.title span i{display:inline-block;font-style:normal;transform:translateY(106%);
+  animation:rise .9s cubic-bezier(.16,.86,.24,1) forwards;animation-delay:calc(var(--i)*.06s)}
+@keyframes rise{to{transform:translateY(0)}}
+.sub{margin:clamp(10px,2vw,16px) 0 0;font-size:clamp(13px,2vw,17px);letter-spacing:.34em;color:var(--gr2);font-weight:700;
+  opacity:0;animation:fade .7s ease .68s forwards}
+@keyframes fade{to{opacity:1}}
+.when{margin:clamp(22px,4vw,38px) 0 0;display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px clamp(18px,4vw,42px);
+  opacity:0;animation:fade .7s ease .82s forwards}
+.date{font-weight:900;font-size:clamp(36px,8.6vw,84px);line-height:.94;letter-spacing:-.015em;
+  font-variant-numeric:tabular-nums;margin:0;text-shadow:0 2px 30px rgba(0,0,0,.5)}
+.date u{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;font-size:.36em;width:1.85em;height:1.85em;box-sizing:border-box;border-radius:50%;line-height:1;margin-left:.34em;vertical-align:.55em;font-weight:900;flex:none;border:.1em solid var(--gr);color:var(--gr)}
+.place{font-size:clamp(13px,2vw,16px);line-height:1.65;color:var(--ink2);padding-bottom:.5em}
+.place b{display:block;font-family:var(--mi);font-weight:800;font-size:clamp(17px,2.8vw,23px);color:#fff;letter-spacing:.04em}
+.tickets{margin:clamp(20px,3.5vw,32px) 0 0;display:flex;flex-wrap:wrap;gap:10px 12px;align-items:center;
+  opacity:0;animation:fade .7s ease .94s forwards}
+.pill{background:var(--gr);color:#08090a;font-weight:900;font-size:14px;letter-spacing:.16em;padding:10px 22px}
+.pill.o{background:rgba(255,255,255,.07);color:#fff;border:1px solid rgba(255,255,255,.4);font-weight:700;backdrop-filter:blur(4px)}
+.host{margin:clamp(18px,3vw,28px) 0 0;font-size:11.5px;color:var(--ink3);letter-spacing:.06em;
+  opacity:0;animation:fade .7s ease 1.06s forwards}
+@media (prefers-reduced-motion:reduce){
+  .title span i{transform:none;animation:none}.sub,.when,.tickets,.host{opacity:1;animation:none}
+  .tiles i{animation:none}.tiles i:nth-child(1){opacity:1}}
+
+/* ===== 索引 ===== */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:rgba(8,9,10,.92);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nv{max-width:1140px;margin:0 auto;padding:0 24px;display:flex;overflow-x:auto;scrollbar-width:none}
+.nv::-webkit-scrollbar{display:none}
+nav button{flex:none;appearance:none;border:0;background:transparent;cursor:pointer;color:var(--ink2);
+  font:700 12.5px/1.3 var(--go);letter-spacing:.09em;padding:16px 16px;white-space:nowrap;position:relative}
+nav button[aria-selected=true]{color:var(--gr)}
+nav button[aria-selected=true]::after{content:"";position:absolute;left:14px;right:14px;bottom:0;height:2px;background:var(--gr)}
+nav button:hover{color:var(--ink)}
+
+/* ===== 面 ===== */
+section{padding-block:clamp(40px,6vw,70px) clamp(48px,8vw,88px)}
+.head{display:flex;align-items:flex-end;gap:16px;margin:0 0 clamp(22px,3.5vw,34px);border-bottom:1px solid var(--line);padding-bottom:12px}
+.head h2{margin:0;font-family:var(--mi);font-weight:800;font-size:clamp(24px,4.6vw,38px);letter-spacing:.05em;line-height:1.22}
+.head span{margin-left:auto;font-size:10.5px;font-weight:700;letter-spacing:.2em;color:var(--ink3);white-space:nowrap;padding-bottom:6px}
+.intro{margin:0 0 clamp(24px,4vw,34px);color:var(--ink2);font-size:14px;max-width:58ch}
+
+.facts{display:grid;gap:1px;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));margin:0 0 clamp(26px,4vw,40px);
+  background:var(--line);border:1px solid var(--line)}
+.fact{background:var(--card);padding:20px 22px;border:0}
+.fact.hi{background:linear-gradient(140deg,#123a29,#0d2a1e)}
+.fact dt{font-size:10.5px;font-weight:700;letter-spacing:.22em;color:var(--ink3);margin:0 0 8px}
+.fact.hi dt{color:var(--gr2)}
+.fact dd{margin:0}
+.k1{font-family:var(--mi);font-weight:800;font-size:clamp(21px,3.8vw,30px);line-height:1.26;letter-spacing:.02em;display:block}
+.k1 i{font-style:normal;font-family:var(--go);font-weight:500;font-size:.5em;margin-left:.4em;color:var(--ink2)}
+.k2{display:block;font-size:12.5px;color:var(--ink2);margin-top:7px;line-height:1.75}
+.run{list-style:none;margin:0;padding:0;font-variant-numeric:tabular-nums}
+.run li{display:flex;gap:12px;flex-wrap:wrap;align-items:baseline;padding:3px 0}
+.run em{font-style:normal;font-size:12.5px;color:var(--ink2);min-width:8.6em}
+.run b{font-weight:900;font-size:18px;letter-spacing:-.01em;color:var(--gr2)}
+.freebig{font-weight:900;font-size:36px;letter-spacing:.05em;color:var(--gr);line-height:1.08;display:block}
+
+.creed{font-family:var(--mi);font-weight:800;font-size:clamp(18px,3vw,24px);line-height:2;letter-spacing:.04em;
+  margin:0 0 22px;max-width:36ch;border-left:3px solid var(--gr);padding-left:22px}
+.fine{font-size:13px;color:var(--ink2);max-width:58ch;margin:0}
+
+/* 受賞 */
+.band{background:transparent;color:var(--ink);padding:0 0 12px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+  border-bottom:1px solid var(--line)}
+.band b{font-family:var(--mi);font-weight:800;font-size:22px;letter-spacing:.08em}
+.band em{font-style:normal;font-weight:900;font-size:15px;color:var(--gr);font-variant-numeric:tabular-nums}
+.band span{margin-left:auto;font-size:12px;color:var(--ink2);font-family:var(--mi)}
+.entry{border:0;border-bottom:1px solid var(--line);background:transparent;padding:clamp(20px,3vw,30px) 0}
+.entry.top{background:transparent}
+.pz{margin:0;font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--gr);line-height:1.7}
+.entry.top .pz{color:var(--ki);font-size:11.5px}
+.wn{font-family:var(--mi);font-weight:800;font-size:clamp(21px,4.4vw,36px);line-height:1.32;letter-spacing:.04em;margin:8px 0 0;text-wrap:balance}
+.sch{font-size:12.5px;color:var(--ink2);margin:8px 0 0}
+.plus{font-size:12px;color:var(--ki);font-weight:700;margin:6px 0 0}
+.plates{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:20px 0 0}
+.plates.mini{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));max-width:600px}
+figure{margin:0}
+figure img{display:block;width:100%;height:auto;border:0;background:var(--card);
+  box-shadow:0 14px 44px rgba(0,0,0,.55);transition:transform .4s cubic-bezier(.2,.8,.3,1)}
+figure:hover img{transform:translateY(-4px) scale(1.012)}
+figcaption{font-size:10px;font-weight:700;letter-spacing:.2em;color:var(--ink3);margin-top:8px}
+
+.soon{border:1px solid var(--line);background:var(--card);padding:clamp(32px,5vw,52px) 22px;text-align:center;margin:0 0 24px}
+.soon b{display:block;font-family:var(--mi);font-weight:800;font-size:clamp(20px,3.6vw,25px);letter-spacing:.06em;margin-bottom:8px}
+.soon p{margin:0 auto;font-size:13.5px;color:var(--ink2);max-width:42ch}
+.vote{background:linear-gradient(130deg,#123a29,#0d2a1e);border:1px solid var(--gr);padding:clamp(20px,3.4vw,30px);
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 28px;align-items:center}
+.vote h3{font-family:var(--mi);font-weight:800;font-size:clamp(20px,3.4vw,26px);margin:0 0 7px;letter-spacing:.06em}
+.vote p{margin:0;font-size:13px;color:var(--ink2);max-width:48ch}
+.cta{justify-self:end;display:inline-block;text-decoration:none;background:var(--gr);color:#08090a;
+  font-weight:900;font-size:15px;letter-spacing:.14em;padding:15px 34px;white-space:nowrap}
+.cta:hover{background:var(--gr2)}
+
+.sponhead{font-family:var(--mi);font-weight:800;font-size:clamp(20px,3.4vw,26px);letter-spacing:.06em;
+  margin:clamp(38px,6vw,56px) 0 6px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.spons{columns:3 208px;column-gap:28px;margin:18px 0 0}
+.spons div{break-inside:avoid;font-size:12.5px;line-height:2}
+.spons a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.spons a:hover{color:var(--gr);border-bottom-color:var(--gr)}
+.spons span{color:var(--ink2)}
+.thx{font-family:var(--mi);font-size:14px;color:var(--ink2);margin:22px 0 0;letter-spacing:.04em}
+
+footer{background:var(--card);color:var(--ink2);padding-block:clamp(30px,5vw,48px) clamp(40px,6vw,60px);margin-top:20px;
+  border-top:1px solid var(--line)}
+footer dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 22px;margin:0;font-size:12.5px}
+footer dt{font-size:10px;font-weight:700;letter-spacing:.22em;color:var(--ink3);white-space:nowrap;padding-top:4px}
+footer dd{margin:0;line-height:1.85}
+
+@supports (animation-timeline: view()){
+  @media (prefers-reduced-motion:no-preference){
+    .head,.fact,.entry,.soon,.vote,.creed,.sponhead{
+      animation:up .7s linear both;animation-timeline:view();animation-range:entry 0% cover 22%}
+    @keyframes up{from{opacity:.12;transform:translateY(26px)}to{opacity:1;transform:none}}
+  }
+}
+@media (max-width:640px){
+  .vote{grid-template-columns:minmax(0,1fr)}.cta{justify-self:start}
+  .spons{columns:1}.band span{margin-left:0;width:100%}
+  .hero{min-height:74vh}
+}
+
+/* ===== Ver2で足した部品 ===== */
+.tt{list-style:none;margin:0 0 clamp(26px,4vw,40px);padding:0;border:1px solid var(--line);background:var(--card);font-variant-numeric:tabular-nums}
+.tt li{display:grid;grid-template-columns:6.2em minmax(0,1fr);gap:14px;padding:11px 20px;border-bottom:1px solid var(--line);font-size:13.5px}
+.tt li:last-child{border-bottom:0}
+.tt b{font-weight:900;color:var(--gr2);font-size:15px}
+.tt li.big{background:linear-gradient(140deg,#123a29,#0d2a1e)}
+.tt small{display:block;color:var(--ink2);font-size:12px;margin-top:2px}
+.kids{display:grid;gap:1px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));background:var(--line);border:1px solid var(--line);margin:0 0 clamp(26px,4vw,40px)}
+.kids>div{background:var(--card);padding:22px 24px}
+.kids h3{font-family:var(--mi);font-weight:800;font-size:clamp(18px,3vw,22px);margin:0 0 8px;letter-spacing:.05em}
+.kids p{margin:0 0 12px;font-size:13.5px;color:var(--ink2)}
+.kids .gift{color:var(--ki);font-weight:700}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btns a,.btns span{display:inline-block;text-decoration:none;font-weight:900;font-size:13.5px;letter-spacing:.1em;padding:12px 22px}
+.btns a{background:var(--gr);color:#08090a}.btns a:hover{background:var(--gr2)}
+.btns a.o{background:transparent;color:var(--gr);border:1px solid var(--gr)}
+.btns span{border:1px dashed var(--ink3);color:var(--ink3)}
+
+.news{list-style:none;margin:0 0 clamp(26px,4vw,40px);padding:0;border-top:1px solid var(--line)}
+.news li{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:14px;padding:12px 2px;border-bottom:1px solid var(--line);font-size:13.5px}
+.news time{color:var(--gr2);font-weight:700;font-variant-numeric:tabular-nums}
+.aw{list-style:none;margin:0 0 clamp(26px,4vw,40px);padding:0;display:grid;gap:1px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));background:var(--line);border:1px solid var(--line)}
+.aw li{background:var(--card);padding:13px 18px;font-size:13.5px;font-weight:700}
+.aw li.top{grid-column:1/-1;background:linear-gradient(140deg,#123a29,#0d2a1e);font-family:var(--mi);font-size:clamp(18px,3vw,22px)}
+.aw small{display:block;font-weight:400;font-family:var(--go);color:var(--ink2);font-size:12px;margin-top:3px}
+.jd{list-style:none;margin:0 0 clamp(26px,4vw,40px);padding:0;display:grid;gap:1px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));background:var(--line);border:1px solid var(--line)}
+.jd li{background:var(--card);padding:12px 18px;font-size:12.5px;color:var(--ink2)}
+.jd li b{display:block;color:var(--ink);font-size:15px;font-family:var(--mi);font-weight:800;letter-spacing:.05em;margin-top:2px}
+.jd li.top{grid-column:1/-1;background:linear-gradient(140deg,#123a29,#0d2a1e)}
+.map{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--line);margin:0 0 clamp(26px,4vw,40px);background:var(--card)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
+.ask{margin:0 0 clamp(26px,4vw,40px);padding:0 0 0 1.2em;font-size:13.5px;color:var(--ink2);line-height:2}
+
+/* ===== Rev5 ===== */
+.theme{margin:clamp(12px,2vw,18px) 0 0;font-family:var(--mi);font-weight:800;font-size:clamp(16px,2.6vw,22px);letter-spacing:.06em;color:#fff;
+  opacity:0;animation:fade .7s ease .76s forwards;text-shadow:0 2px 20px rgba(0,0,0,.6)}
+.theme small{font-family:var(--go);font-size:.6em;font-weight:700;letter-spacing:.2em;color:var(--gr2);margin-right:.8em}
+@media (prefers-reduced-motion:reduce){.theme{opacity:1;animation:none}}
+.sc{display:grid;gap:1px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));background:var(--line);border:1px solid var(--line);margin:0 0 clamp(26px,4vw,40px)}
+.sc>div{background:var(--card);padding:20px 22px}
+.sc h3{font-family:var(--mi);font-weight:800;font-size:clamp(18px,3vw,22px);margin:0 0 10px;letter-spacing:.05em;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.sc h3 span{font-family:var(--go);font-size:13px;font-weight:900;color:var(--gr2);letter-spacing:.06em}
+.sc ul{list-style:none;margin:0;padding:0}
+.sc li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid var(--line);font-size:14px}
+.sc li b{color:var(--gr2);font-variant-numeric:tabular-nums;white-space:nowrap}
+.spons div{line-height:1.6}
+.spons a,.spons span{display:inline-block;padding:7px 0}
+.wn{font-size:clamp(21px,4.4vw,36px)}
+.facts.six{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+@media (max-width:480px){.nv{padding:0 10px}nav button{padding:16px 9px;font-size:12px;letter-spacing:.05em}nav button[aria-selected=true]::after{left:8px;right:8px}}
+
+</style>
+
+</head>
+<body>
+<header class="hero">
+  <div class="tiles" aria-hidden="true"><i style="background-image:url(img/a01_m3.jpg)"></i><i style="background-image:url(img/a02_m2.jpg)"></i><i style="background-image:url(img/a01_m4.jpg)"></i></div>
+  <div class="heroin">
+    <p class="eyeb"><b>第32回</b><span>MIYAGI ARCHITECTURE MIRAI AWARD</span></p>
+    <h1 class="title" id="ttl">みやぎ建築未来賞</h1>
+    <p class="sub">2026</p>
+    <p class="theme"><small>テーマ</small>『わたし』らしく輝ける住まい</p>
+    <div class="when">
+      <p class="date">2026.11.14<u>土</u></p>
+      <p class="place"><b>東北工業大学 八木山キャンパス</b>1号館3階　仙台市太白区八木山香澄町35-1</p>
+    </div>
+    <p class="tickets"><span class="pill">入場無料</span><span class="pill o">どなたでも観覧できます</span></p>
+    <p class="host">主催　一般社団法人 宮城県建築士事務所協会</p>
+  </div>
+</header>
+
+<nav role="tablist" aria-label="ページ"><div class="nv">
+  <button id="d1" role="tab" aria-controls="e1" aria-selected="true">開催案内</button>
+  <button id="d2" role="tab" aria-controls="e2" aria-selected="false">出展校</button>
+  <button id="d4" role="tab" aria-controls="e4" aria-selected="false">昨年の受賞一覧</button>
+  <button id="d5" role="tab" aria-controls="e5" aria-selected="false">以前の大賞</button>
+</div></nav>
+
+<main class="w">
+
+<section id="e1" role="tabpanel" aria-labelledby="d1">
+  <div class="head"><h2>開催案内</h2><span>01 / 04</span></div>
+  <p class="intro">宮城県内の高校生・専門学校生・大学校生が、テーマ『わたし』らしく輝ける住まいに取り組んだ作品を展示し、公開審査と表彰式を行います。保護者の方、一般の方も観覧できます。</p>
+  <dl class="facts six">
+    <div class="fact hi"><dt>日時</dt><dd><span class="k1">2026年11月14日<i>（土）</i></span><span class="k2">受付・開場 10:00〜　開会 10:30</span></dd></div>
+    <div class="fact"><dt>会場</dt><dd><span class="k1" style="font-size:clamp(17px,2.9vw,22px)">東北工業大学 八木山キャンパス</span><span class="k2">1号館3階　仙台市太白区八木山香澄町35-1<br>地下鉄東西線「八木山動物公園駅」より徒歩約15分</span></dd></div>
+    <div class="fact"><dt>当日の進行</dt><dd><ul class="run">
+      <li><em>作品発表</em><b>10:55〜16:00</b></li>
+      <li><em>表彰式</em><b>17:00〜17:50</b></li>
+    </ul><span class="k2">発表の時刻と表彰式は前後する場合があります。</span></dd></div>
+    <div class="fact"><dt>入場</dt><dd><span class="freebig">無料</span></dd></div>
+    <div class="fact"><dt>テーマ</dt><dd><span class="k1" style="font-size:clamp(18px,3vw,22px)">『わたし』らしく輝ける住まい</span></dd></div>
+    <div class="fact"><dt>出展</dt><dd><span class="k1">5校<i>22作品</i></span><span class="k2">高等学校の部 20作品／専門学校・大学校の部 2作品</span></dd></div>
+  </dl>
+  <div class="head"><h2>お知らせ</h2><span>NEWS</span></div>
+  <ul class="news">
+    <li><time datetime="2026-10-09">2026.10.09</time><span>公式サイトを開設しました。当日の流れ・出展校・表彰・審査員を掲載しています。</span></li>
+    <li><time datetime="2026-10-01">2026.10.01</time><span>中学生の参加申込フォーム・保護者同意フォームの受付を始めました。</span></li>
+  </ul>
+  <div class="head"><h2>当日の流れ</h2><span>11.14 SAT</span></div>
+  <ol class="tt">
+    <li><b>10:00</b><span>受付・開場／作品展示の公開</span></li>
+    <li><b>10:30</b><span>開会・主催者挨拶・審査員紹介</span></li>
+    <li class="big"><b>10:55</b><span>作品のプレゼンテーション（公開審査）　午前の部<small>22作品を1作品ずつ発表し、審査員が質問します。午前は6作品です</small></span></li>
+    <li><b>12:00</b><span>昼休憩<small>この時間も作品展示をご覧いただけます</small></span></li>
+    <li class="big"><b>13:00</b><span>作品のプレゼンテーション　午後の部<small>午後は16作品です。13:50と15:00に休憩をはさみます</small></span></li>
+    <li><b>16:00</b><span>審査終了・ベストプレゼン賞の投票</span></li>
+    <li class="big"><b>17:00</b><span>表彰式<small>審査講評、受賞作品の発表と表彰</small></span></li>
+    <li><b>17:50</b><span>表彰式終了・記念撮影</span></li>
+    <li><b>18:20</b><span>退場<small>会場の都合により、18:20までにご退場ください</small></span></li>
+  </ol>
+  <p class="fine" style="margin:-18px 0 clamp(26px,4vw,40px)">発表の時刻は前後する場合があります。途中からの入場・退場は自由です。</p>
+
+  <div class="head"><h2>表彰</h2><span>13 AWARDS</span></div>
+  <ul class="aw">
+    <li class="top">みやぎ建築未来賞 大賞<small>高等学校の部・専門学校・大学校の部　各1作品</small></li>
+    <li>国土交通省東北地方整備局長賞</li>
+    <li>宮城県知事賞</li>
+    <li>仙台市長賞</li>
+    <li>仙台市教育委員会教育長賞</li>
+    <li>宮城県教育委員会教育長賞</li>
+    <li>東北工業大学 学長賞</li>
+    <li>（一社）日本建築士事務所協会連合会 会長賞</li>
+    <li>（一社）宮城県建築士事務所協会賛助会 会長賞</li>
+    <li>（一社）宮城県建築士事務所協会 仙台支部長賞</li>
+    <li>宮事協Ｗｅｂ大賞<small>Ｗｅｂ投票で決まります</small></li>
+    <li>ベストプレゼン賞<small>会場のみなさんの投票で決まります</small></li>
+  </ul>
+  <div class="head"><h2>審査員</h2><span>14 JUDGES</span></div>
+  <ul class="jd">
+    <li class="top">審査委員長　東北工業大学 建築学部 建築学科 教授<b>福屋 粧子</b></li>
+    <li>審査委員　国土交通省東北地方整備局 建政部 都市・住宅整備課 課長補佐<b>川口 高雄</b></li>
+    <li>審査委員　宮城県 土木部営繕課 課長<b>玉川 誠</b></li>
+    <li>審査委員　仙台市都市整備局 公共建築住宅部 営繕課 係長<b>板垣 祐太</b></li>
+    <li>当協会　会長<b>大宮 利一郎</b></li>
+    <li>当協会　副会長<b>佐々木 昌喜</b></li>
+    <li>当協会　副会長<b>東山 圭</b></li>
+    <li>当協会　副会長<b>佐藤 究</b></li>
+    <li>当協会　副会長<b>大豆生田 敏男</b></li>
+    <li>当協会　副会長<b>栗原 將光</b></li>
+    <li>当協会　理事<b>川口 裕子</b></li>
+    <li>当協会　賛助会 会長<b>大場 秀兵</b></li>
+    <li>当協会　仙台支部 支部長<b>市場 芳男</b></li>
+    <li>当協会　青年女性部会長<b>髙橋 雷人</b></li>
+  </ul>
+  <div class="head"><h2>中学生・高校生のみなさんへ</h2><span>FOR STUDENTS</span></div>
+  <div class="kids">
+    <div>
+      <h3>見に来てください</h3>
+      <p>高校生・専門学校生・大学校生が、自分で考えた住まいやまちを、図面と模型で発表します。建築に興味がある人、ものづくりや絵を描くのが好きな人に、ぜひ見てほしい催しです。</p>
+      <p class="gift">来場プレゼント　来場した学生のみなさんに、ボールペン・定規・水平器など7つの機能がついた多機能ペンを差し上げます（先着300名。なくなり次第終了します）。</p>
+    </div>
+    <div>
+      <h3>中学生の参加申込</h3>
+      <p>中学生だけで来る場合は、保護者の同意が必要です。下のフォームから申し込んでください。配布したチラシの二次元コードからも開けます。</p>
+      <div class="btns"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf8TDbd2Ar4tajen7sCYtupGZpLpFvrDhDKGsE6VUh7Kq__mg/viewform" target="_blank" rel="noopener noreferrer">参加申込フォーム</a><a href="https://docs.google.com/forms/d/e/1FAIpQLScyXvyf7zuza7krkrJDiAr8AFzDRSbqaM1sW3jYkinuJGc-CA/viewform" target="_blank" rel="noopener noreferrer" class="o">保護者同意フォーム</a></div>
+    </div>
+  </div>
+
+  <div class="head"><h2>会場へのアクセス</h2><span>ACCESS</span></div>
+  <dl class="facts">
+    <div class="fact"><dt>会場</dt><dd><span class="k1" style="font-size:clamp(17px,2.9vw,22px)">東北工業大学 八木山キャンパス 1号館3階</span><span class="k2">仙台市太白区八木山香澄町35-1<br>発表と表彰式は131教室、作品展示は132教室</span></dd></div>
+    <div class="fact"><dt>地下鉄</dt><dd><span class="k2" style="margin-top:0">地下鉄東西線「八木山動物公園駅」より徒歩約15分</span></dd></div>
+    <div class="fact"><dt>バス</dt><dd><span class="k2" style="margin-top:0">「東北工業大学前」下車すぐ</span></dd></div>
+    <div class="fact"><dt>地図</dt><dd><div class="btns"><a class="o" href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E5%8C%97%E5%B7%A5%E6%A5%AD%E5%A4%A7%E5%AD%A6+%E5%85%AB%E6%9C%A8%E5%B1%B1%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9" target="_blank" rel="noopener noreferrer">Googleマップで開く</a></div></dd></div>
+  </dl>
+  <div class="map"><iframe src="https://www.google.com/maps?q=%E6%9D%B1%E5%8C%97%E5%B7%A5%E6%A5%AD%E5%A4%A7%E5%AD%A6%20%E5%85%AB%E6%9C%A8%E5%B1%B1%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="東北工業大学 八木山キャンパスの地図"></iframe></div>
+
+  <div class="head"><h2>ご来場のみなさまへ</h2><span>REQUEST</span></div>
+  <ul class="ask">
+    <li>入場は無料です。申込は要りません（中学生だけで来る場合を除きます）。途中からの入場・退場は自由です。</li>
+    <li>ごみは会場後方の袋にお入れください。館内のごみ箱は使えません。</li>
+    <li>発表中は、携帯電話の電源をお切りになるか、マナーモードにしてください。</li>
+    <li>公共交通機関でのご来場にご協力ください。</li>
+  </ul>
+  <div class="head"><h2>趣旨</h2><span>創設 1994年</span></div>
+  <p class="creed">将来建築設計を目指す高校生や専門学校の学生達に、夢と希望をもって社会に臨んでいただきたい。その願いを込めて、毎年『みやぎ建築未来賞』を開催し、顕彰を行います。</p>
+  <p class="fine">2008年より、従来の「卒展」を市民とともに建築を知る月間の催事に合わせ、顕彰の範囲を広げて継続しています。</p>
+</section>
+
+<section id="e2" role="tabpanel" aria-labelledby="d2" hidden>
+  <div class="head"><h2>第32回 出展校</h2><span>02 / 04</span></div>
+  <p class="intro">第32回は5校から22作品の出展があります。テーマは『わたし』らしく輝ける住まいです。各作品のプレゼンテーションボードと模型写真は、掲載の準備が整い次第このページでお知らせします。</p>
+  <div class="sc">
+    <div><h3>高等学校の部<span>20作品</span></h3><ul><li>宮城県古川工業高等学校<b>5作品</b></li><li>宮城県石巻工業高等学校<b>6作品</b></li><li>仙台市立仙台工業高等学校<b>9作品</b></li></ul></div>
+    <div><h3>専門学校・大学校の部<span>2作品</span></h3><ul><li>東北職業能力開発大学校<b>1作品</b></li><li>仙台工科専門学校<b>1作品</b></li></ul></div>
+  </div>
+</section>
+
+<section id="e4" role="tabpanel" aria-labelledby="d4" hidden>
+  <div class="head"><h2>第31回 2025年　受賞一覧</h2><span>03 / 04</span></div>
+  <p class="intro">テーマ『愛を感じる住まい』／2025年11月15日（土）　東北学院大学 五橋キャンパス 404教室。大賞を先頭に、賞の序列の順で掲げます。学校名までの掲載とし、出展者のお名前は載せていません。</p>
+
+  <div class="band"><b>第31回</b><em>2025</em><span>テーマ『愛を感じる住まい』</span></div>
+  <div class="entry top">
+    <p class="pz">みやぎ建築未来賞 大賞（高等学校の部）／宮事協Ｗｅｂ大賞（高等学校の部）</p>
+    <h3 class="wn">六六大樹　～六で彩るじゃぱんらいふ～</h3>
+    <p class="sch">宮城県石巻工業高等学校 建築科</p>
+    <div class="plates">
+      <figure><img src="img/a01_p1.jpg" width="1160" height="1637" alt="六六大樹 パネル 左"><figcaption>パネル 1／2</figcaption></figure>
+      <figure><img src="img/a01_p2.jpg" width="1160" height="1637" alt="六六大樹 パネル 右"><figcaption>パネル 2／2</figcaption></figure>
+    </div>
+    <div class="plates mini">
+      <figure><img src="img/a01_m3.jpg" width="760" height="570" loading="lazy" alt="六六大樹 模型"><figcaption>模型</figcaption></figure>
+      <figure><img src="img/a01_m4.jpg" width="760" height="570" loading="lazy" alt="六六大樹 模型"><figcaption>模型</figcaption></figure>
+    </div>
+  </div>
+  <div class="entry top">
+    <p class="pz">みやぎ建築未来賞 大賞（専門学校・大学校の部）／宮事協Ｗｅｂ大賞（専門学校・大学校の部）／ベストプレゼン賞</p>
+    <h3 class="wn">Ｌｅｐａ Ｆｉｅｌｄ　～愛と共創のパーク～</h3>
+    <p class="sch">仙台工科専門学校 建築デザイン科</p>
+    <div class="plates" style="max-width:660px">
+      <figure><img src="img/a02_p1.jpg" width="1160" height="824" loading="lazy" alt="Lepa Field プレゼンテーションボード"><figcaption>プレゼンテーションボード</figcaption></figure>
+    </div>
+    <div class="plates mini">
+      <figure><img src="img/a02_m2.jpg" width="760" height="570" loading="lazy" alt="Lepa Field 模型"><figcaption>模型</figcaption></figure>
+      <figure><img src="img/a02_m3.jpg" width="760" height="570" loading="lazy" alt="Lepa Field 模型"><figcaption>模型</figcaption></figure>
+    </div>
+  </div>
+  <div class="entry"><p class="pz">国土交通省東北地方整備局長賞</p><h3 class="wn">「交流が織りなす第二の家」　～外国人留学生と地域の人を繋ぐ寮～</h3><p class="sch">宮城県古川工業高等学校 建築科</p></div>
+  <div class="entry"><p class="pz">宮城県知事賞</p><h3 class="wn">「ずれ」から生まれる繋がり</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p></div>
+  <div class="entry"><p class="pz">仙台市長賞</p><h3 class="wn">繋ぐ旋律　～音楽を通して伝わる人と人～</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p></div>
+  <div class="entry"><p class="pz">宮城県教育委員会教育長賞</p><h3 class="wn">杜の環</h3><p class="sch">東北電子専門学校 建築科</p></div>
+  <div class="entry"><p class="pz">仙台市教育委員会教育長賞</p><h3 class="wn">sincerity　～愛がそそがれる場所、ここに～</h3><p class="sch">宮城県石巻工業高等学校 建築科</p></div>
+  <div class="entry"><p class="pz">（一社）日本建築士事務所協会連合会 会長賞</p><h3 class="wn">結　～世代をむすぶ、愛のかたち～</h3><p class="sch">宮城県石巻工業高等学校 建築科</p></div>
+  <div class="entry"><p class="pz">（一社）宮城県建築士事務所協会賛助会 会長賞</p><h3 class="wn">Café ねこごこち</h3><p class="sch">宮城県白石工業高等学校 建築科</p></div>
+  <div class="entry"><p class="pz">（一社）宮城県建築士事務所協会 仙台支部長賞</p><h3 class="wn">The Chapter House</h3><p class="sch">宮城県石巻工業高等学校 建築科</p></div>
+
+  <h2 class="sponhead">協賛企業</h2>
+  <p class="intro">第31回みやぎ建築未来賞2025に、下記の企業・事務所からご協賛をいただきました。</p>
+  <div class="spons" data-spon></div>
+  <p class="thx">「第31回みやぎ建築未来賞2025」に際しまして多大なご協賛をいただき、ありがとうございました。</p>
+</section>
+
+<section id="e5" role="tabpanel" aria-labelledby="d5" hidden>
+  <div class="head"><h2>以前の大賞</h2><span>04 / 04</span></div>
+  <p class="intro">第27回2021以降の各回の大賞です。学校名までの掲載とし、出展者のお名前は載せていません。</p>
+
+  <div class="band"><b>第30回</b><em>2024</em><span>テーマ『○○の家をつくる』（高等学校の部）</span></div>
+  <div class="entry"><p class="pz">大賞　高等学校の部</p><h3 class="wn">ＤＵＥＴ ＨＯＵＳＥ</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p><div class="plates" style="max-width:520px"><figure><img src="img/p24k_p.jpg" width="1000" height="1404" loading="lazy" alt="ＤＵＥＴ ＨＯＵＳＥ パネル"><figcaption>パネル</figcaption></figure></div></div>
+  <div class="entry"><p class="pz">大賞　専門学校・大学校の部</p><h3 class="wn">繋咲荘　～地域活性化のための古民家集会所をつくる～</h3><p class="sch">東北職業能力開発大学校 住居環境科</p><p class="plus">同時受賞　宮事協Ｗｅｂ大賞（専門学校・大学校の部）</p><div class="plates" style="max-width:520px"><figure><img src="img/p24s_p.jpg" width="1000" height="1416" loading="lazy" alt="繋咲荘 パネル"><figcaption>パネル</figcaption></figure><figure><img src="img/p24s_m.jpg" width="700" height="354" loading="lazy" alt="繋咲荘 模型"><figcaption>模型</figcaption></figure></div></div>
+
+  <div class="band" style="margin-top:30px"><b>第29回</b><em>2023</em></div>
+  <div class="entry"><p class="pz">大賞　高等学校の部</p><h3 class="wn">幸せ満タンステーション</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p><div class="plates" style="max-width:520px"><figure><img src="img/p23k_p.jpg" width="1000" height="1411" loading="lazy" alt="幸せ満タンステーション パネル"><figcaption>パネル</figcaption></figure></div></div>
+  <div class="entry"><p class="pz">大賞　専門学校・大学校の部</p><h3 class="wn">異食館　～再出発！杜の都　旧配送センター～</h3><p class="sch">東北文化学園専門学校 インテリア科</p><p class="plus">同時受賞　宮事協Ｗｅｂ大賞（専門学校・大学校の部）</p><div class="plates" style="max-width:520px"><figure><img src="img/p23s_p.jpg" width="1000" height="707" loading="lazy" alt="異食館 パネル"><figcaption>パネル</figcaption></figure></div></div>
+
+  <div class="band" style="margin-top:30px"><b>第28回</b><em>2022</em></div>
+  <div class="entry"><p class="pz">大賞　高等学校の部</p><h3 class="wn">環　～未来を育てる～</h3><p class="sch">宮城県白石工業高等学校 建築科</p><div class="plates" style="max-width:520px"><figure><img src="img/p22k_p.jpg" width="846" height="1195" loading="lazy" alt="環　～未来を育てる～ パネル"><figcaption>パネル</figcaption></figure></div></div>
+  <div class="entry"><p class="pz">大賞　専門学校・大学校の部</p><h3 class="wn">圧倒的拠所</h3><p class="sch">東北文化学園専門学校 インテリア科</p><p class="plus">同時受賞　宮事協Ｗｅｂ大賞（専門学校・大学校の部）</p><div class="plates" style="max-width:520px"><figure><img src="img/p22s_p.jpg" width="1000" height="707" loading="lazy" alt="圧倒的拠所 パネル"><figcaption>パネル</figcaption></figure></div></div>
+
+  <div class="band" style="margin-top:30px"><b>第27回</b><em>2021</em><span>テーマ『ＳＤＧｓと建築』</span></div>
+  <div class="entry"><p class="pz">大賞　高等学校の部</p><h3 class="wn">Ｉｎｔｅｒａｃｔ ｃｈｉｌｄ</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p><div class="plates" style="max-width:520px"><figure><img src="img/p21k_p.jpg" width="1000" height="750" loading="lazy" alt="Ｉｎｔｅｒａｃｔ ｃｈｉｌｄ パネル"><figcaption>パネル</figcaption></figure></div></div>
+  <div class="entry"><p class="pz">大賞　専門学校・大学校の部</p><h3 class="wn">百間長屋</h3><p class="sch">東北文化学園専門学校 インテリア科</p><p class="plus">同時受賞　宮事協Ｗｅｂ大賞（専門学校・大学校の部）</p><div class="plates" style="max-width:520px"><figure><img src="img/p21s_p.jpg" width="1000" height="709" loading="lazy" alt="百間長屋 パネル"><figcaption>パネル</figcaption></figure></div></div>
+
+</section>
+</main>
+
+<footer><div class="w">
+  <dl>
+    <dt>主催</dt><dd>一般社団法人 宮城県建築士事務所協会</dd>
+    <dt>共催</dt><dd>一般社団法人 日本建築士事務所協会連合会<br>一般社団法人 宮城県建築士事務所協会賛助会</dd>
+    <dt>後援</dt><dd>国土交通省東北地方整備局・宮城県・仙台市・宮城県教育委員会・仙台市教育委員会・（独）住宅金融支援機構東北支店・（一社）宮城県建設業協会・（一社）宮城県建築士会・（公社）日本建築家協会東北支部・宮城県インテリア設計士協会・（株）建設新聞社・（株）日刊建設通信新聞社東北支店・（株）日本建設新聞社・河北新報社・ｋｈｂ東日本放送・ｔｂｃ東北放送・仙台放送・ミヤギテレビ・ＮＨＫ仙台放送局</dd>
+    <dt>問合せ</dt><dd>一般社団法人 宮城県建築士事務所協会<br>〒980-0011　仙台市青葉区上杉二丁目2-40　宮城県建築設計会館<br>TEL 022-223-7330　　FAX 022-223-7319<br>E-Mail <a href="mailto:jimukyoku@miyajikyo.com">jimukyoku@miyajikyo.com</a></dd>
+  </dl>
+</div></footer>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"第32回みやぎ建築未来賞2026 公開審査・表彰式",
+"startDate":"2026-11-14T10:30:00+09:00","endDate":"2026-11-14T18:20:00+09:00","url":"https://miyagikentikumiraisyo.github.io/","image":["https://miyagikentikumiraisyo.github.io/img/og.jpg"],"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+"eventStatus":"https://schema.org/EventScheduled","isAccessibleForFree":true,"description":"第32回みやぎ建築未来賞2026の公開審査と表彰式。宮城県内の高校生・専門学校生・大学校生が、テーマ『わたし』らしく輝ける住まいの作品を発表します。2026年11月14日（土）東北工業大学 八木山キャンパス 1号館3階。入場無料、どなたでも観覧できます。",
+"location":{"@type":"Place","name":"東北工業大学 八木山キャンパス 1号館3階","address":{"@type":"PostalAddress","addressRegion":"宮城県","addressLocality":"仙台市太白区","streetAddress":"八木山香澄町35-1","addressCountry":"JP"}},
+"organizer":{"@type":"Organization","name":"一般社団法人 宮城県建築士事務所協会","telephone":"+81-22-223-7330","email":"jimukyoku@miyajikyo.com","address":{"@type":"PostalAddress","postalCode":"980-0011","addressRegion":"宮城県","addressLocality":"仙台市青葉区","streetAddress":"上杉二丁目2-40 宮城県建築設計会館","addressCountry":"JP"}}}</script>
+<script id="sdd" type="application/json">[{"name": "(有)環境デザイン工房", "url": ""}, {"name": "(株)櫻田建築設計事務所", "url": "http://sakurada-archi.co.jp"}, {"name": "(株)氏家建築設計事務所", "url": "http://www.ujiie-architect.co.jp/"}, {"name": "(株)菅伸建築設計事務所", "url": "https://www.sugashin-arc.com"}, {"name": "(有)髙橋建築設計事務所", "url": "http://www.tsekei.jp/"}, {"name": "協立塗料(株)", "url": "http://www.k-isaf.co.jp/"}, {"name": "(株)サミー工業", "url": "http://www.samy.co.jp/"}, {"name": "(株)阿部塗装工業", "url": "http://www.abepaint.com/"}, {"name": "(株)エーテック", "url": ""}, {"name": "(株)櫻井防災", "url": ""}, {"name": "大全電機(株)", "url": "http://www.daizen-co.com/"}, {"name": "(株)COS設計", "url": ""}, {"name": "ナショナルエレベーター工業(株)", "url": "http://www.n-elv.co.jp/"}, {"name": "(株)あいあーる　パレスへいあん", "url": "http://www.heian-sendai.co.jp/palace"}, {"name": "ダイキンＨＶＡＣソリューション東北(株)", "url": "http://www.daikin.co.jp/index.html"}, {"name": "(株)堀越", "url": "http://www.horikoshi.info/"}, {"name": "古川電気工業(株)", "url": "http://www.furukawa-denki.com"}, {"name": "(株)斉良工業", "url": ""}, {"name": "(株)図設計", "url": ""}, {"name": "(株)石川設計東北", "url": ""}, {"name": "サイト工業(株)", "url": ""}, {"name": "真栄工芸(株)", "url": "http://www.shineikogei.jp"}, {"name": "シンコール(株)", "url": ""}, {"name": "(株)深松組", "url": "http://www.fukamatsugumi.co.jp/"}, {"name": "東北ポール(株)", "url": "http://www.tohokupole.co.jp/"}, {"name": "(有)菅原防水工業", "url": ""}, {"name": "(株)イズミコンサルティング仙台営業所", "url": ""}, {"name": "装建工業(株)", "url": ""}, {"name": "タカラ工業(株)", "url": ""}, {"name": "(株)楠山設計", "url": "http://kusuyama-arc.co.jp"}, {"name": "日本高圧コンクリート東北(株)東北支社", "url": "http://www.nihonkoatsu.co.jp"}, {"name": "三菱電機(株)東北支社", "url": "http://www.mitsubishielectric.co.jp/"}, {"name": "(株)エネ・グリーン仙台支社", "url": "http://www.enegreen.co.jp/"}, {"name": "(株)盛総合設計", "url": "http://www.sakari.co.jp"}, {"name": "(株)構建築設計事務所", "url": "http://kosekkei.sakura.ne.jp"}, {"name": "(株)橋本店", "url": "http://www.hashimototen.co.jp/"}, {"name": "(株)市場建築構造設計事務所", "url": "http://www.ichibakozo.sakura.ne.jp/"}, {"name": "(株)東山設計", "url": "http://www.h-architect.com"}, {"name": "(株)集建築設計事務所", "url": "https://shusekkei.com/"}, {"name": "(株)三洋工業東北システム", "url": "http://www.sanyo-industries.co.jp/tohoku-sys/"}, {"name": "(株)桂設計", "url": "http://www.katura-arc.com"}, {"name": "(株)淀川製鋼所東北ブロック仙台営業所", "url": ""}, {"name": "(株)昭和羽前建設工業", "url": "https://www.syo-wauzen.co.jp"}, {"name": "太平電気(株)", "url": "http://www.taiheidenki.co.jp/"}, {"name": "(株)リョーワ", "url": "http://www.sendai-ryowa.com/"}, {"name": "(株)村田工務所", "url": "http://www.murata-koumusyo.com"}, {"name": "シーズン設計一級建築士事務所", "url": "https://season1959.hatenablog.com/"}, {"name": "ケイミュー(株)東北営業所", "url": "http://www.kmew.co.jp/"}, {"name": "(株)ミヤックス", "url": "http://www.miyax.jp"}, {"name": "福井コンピュータアーキテクト(株)", "url": "https://archi.fukuicompu.co.jp/"}, {"name": "兼松サステック(株)", "url": "http://www.knn.co.jp/"}]</script>
+<script>
+(function(){
+  /* 題字を一文字ずつ立てる */
+  var t=document.getElementById('ttl'),s='みやぎ建築未来賞';t.setAttribute('aria-label',s);t.textContent='';
+  for(var i=0;i<s.length;i++){
+    var o=document.createElement('span'),n=document.createElement('i');
+    n.textContent=s[i];n.style.setProperty('--i',i);o.appendChild(n);t.appendChild(o);
+  }
+  try{
+    var sp=JSON.parse(document.getElementById('sdd').textContent);
+    document.querySelectorAll('[data-spon]').forEach(function(b){
+      sp.forEach(function(o){var e=document.createElement('div');
+        if(o.url){var a=document.createElement('a');a.href=o.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=o.name;e.appendChild(a)}
+        else{var x=document.createElement('span');x.textContent=o.name;e.appendChild(x)}
+        b.appendChild(e)})});
+  }catch(e){}
+  var tb=[].slice.call(document.querySelectorAll('nav button'));
+  function sw(id){tb.forEach(function(x){var k=x.id===id;x.setAttribute('aria-selected',k?'true':'false');
+    var p=document.getElementById(x.getAttribute('aria-controls'));if(p)p.hidden=!k});
+    try{localStorage.setItem('ms-f',id)}catch(e){}}
+  tb.forEach(function(x){x.addEventListener('click',function(){sw(x.id)});
+    x.addEventListener('keydown',function(e){var i=tb.indexOf(x),n=null;
+      if(e.key==='ArrowRight')n=tb[(i+1)%tb.length];if(e.key==='ArrowLeft')n=tb[(i-1+tb.length)%tb.length];
+      if(n){e.preventDefault();n.focus();sw(n.id)}})});
+  try{var k=localStorage.getItem('ms-f');if(k&&document.getElementById(k))sw(k)}catch(e){}
+})();
+</script>
+</body>
+</html>

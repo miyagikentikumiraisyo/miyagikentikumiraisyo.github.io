@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://miyagikentikumiraisyo.github.io/sitemap.xml
