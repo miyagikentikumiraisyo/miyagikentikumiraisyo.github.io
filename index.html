@@ -73,7 +73,7 @@ a{color:var(--gr)}
 .tickets{margin:clamp(20px,3.5vw,32px) 0 0;display:flex;flex-wrap:wrap;gap:10px 12px;align-items:center;
   opacity:0;animation:fade .7s ease .94s forwards}
 .pill{background:var(--gr);color:#08090a;font-weight:900;font-size:14px;letter-spacing:.16em;padding:10px 22px}
-.pill.o{background:rgba(255,255,255,.07);color:#fff;border:1px solid rgba(255,255,255,.4);font-weight:700;backdrop-filter:blur(4px)}
+.pill.o{background:rgba(8,9,10,.55);color:#fff;border:1px solid rgba(255,255,255,.4);font-weight:700;backdrop-filter:blur(4px)}
 .host{margin:clamp(18px,3vw,28px) 0 0;font-size:11.5px;color:var(--ink3);letter-spacing:.06em;
   opacity:0;animation:fade .7s ease 1.06s forwards}
 @media (prefers-reduced-motion:reduce){
@@ -117,6 +117,39 @@ section{padding-block:clamp(40px,6vw,70px) clamp(48px,8vw,88px)}
 .creed{font-family:var(--mi);font-weight:800;font-size:clamp(18px,3vw,24px);line-height:2;letter-spacing:.04em;
   margin:0 0 22px;max-width:36ch;border-left:3px solid var(--gr);padding-left:22px}
 .fine{font-size:13px;color:var(--ink2);max-width:58ch;margin:0}
+
+.gov{margin:-8px 0 clamp(26px,4vw,40px)}
+.gov a{display:inline-block;color:var(--gr2);font-weight:700;font-size:14px;text-decoration:none;border-bottom:1px solid var(--gr)}
+.gov a:hover,.gov a:focus-visible{color:var(--ink)}
+.vote{margin:0 0 clamp(20px,3vw,28px);scroll-margin-top:72px}
+#vform{scroll-margin-top:72px}
+.wbu{margin:clamp(30px,5vw,44px) 0 -6px;font-size:12px;font-weight:900;letter-spacing:.2em;color:var(--ki)}
+.vb{display:inline-block;margin-top:8px;background:var(--gr);color:#08090a;font-weight:900;font-size:12.5px;letter-spacing:.08em;padding:7px 14px;text-decoration:none}
+.vb:hover,.vb:focus-visible{background:var(--gr2)}
+.vfw{background:#fff;margin:0 0 12px}
+.vfw iframe{display:block;width:100%;height:min(1400px,180vh);border:0}
+/* 第32回 出展作品 */
+.works{margin:0 0 clamp(26px,4vw,40px)}
+.wsch{font-family:var(--mi);font-weight:800;font-size:clamp(18px,3vw,22px);letter-spacing:.05em;margin:clamp(26px,4vw,38px) 0 14px;
+  display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:10px}
+.wsch span{font-family:var(--go);font-size:13px;font-weight:900;color:var(--gr2);letter-spacing:.06em}
+.wl{list-style:none;margin:0;padding:0;display:grid;gap:22px 18px;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr))}
+.wl li{min-width:0}
+.wl .th{display:block;background:var(--card)}
+.wl img{display:block;width:100%;height:auto;aspect-ratio:auto;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.wl h4{font-family:var(--mi);font-weight:800;font-size:15px;line-height:1.5;margin:10px 0 4px;letter-spacing:.03em;overflow-wrap:anywhere}
+.lk{margin:0;font-size:11.5px;display:flex;flex-wrap:wrap;gap:4px 12px}
+.lk a{color:var(--ink2);text-decoration:none;border-bottom:1px solid var(--line)}
+.lk a:hover,.lk a:focus-visible{color:var(--gr);border-bottom-color:var(--gr)}
+.plates.scene{margin:16px 0 clamp(30px,5vw,46px)}
+/* 賞の名前（社長 10/28「もう少し文字大きく　見えない（共通）」：11px → 15px） */
+main .entry .pz,main .entry.top .pz{font-size:15px;letter-spacing:.08em;line-height:1.6}
+/* 過去の回のパネルと模型 */
+.kp{display:grid;gap:14px;margin-top:12px;grid-template-columns:repeat(auto-fill,minmax(min(100%,180px),1fr))}
+.kp figure{margin:0;min-width:0}
+.kp a{display:block}
+.kp img{display:block;width:100%;height:auto;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.kp figcaption{font-size:11.5px;color:var(--ink2);margin-top:6px}
 
 /* 受賞 */
 .band{background:transparent;color:var(--ink);padding:0 0 12px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
@@ -229,6 +262,32 @@ footer dd{margin:0;line-height:1.85}
 .facts.six{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
 @media (max-width:480px){.nv{padding:0 10px}nav button{padding:16px 9px;font-size:12px;letter-spacing:.05em}nav button[aria-selected=true]::after{left:8px;right:8px}}
 
+
+/* 読みやすさ（10/28）：小さい文字を大きく。最後に置いて前の指定より優先させる */
+.host{font-size:13px}
+.head span{font-size:12px}
+.fact dt,footer dt{font-size:12px}
+.k2,.run em,.sch,.spons div,footer dl,.jd li{font-size:14.5px}
+.fine,.vote p,.wsch span,.sc h3 span{font-size:14.5px}
+.soon p,.kids p,.news li,.aw li,.ask,.tt li,.btns a,.btns span{font-size:15px}
+.tt small,.aw small,.plus{font-size:13.5px}
+.wbu{font-size:14px}
+.vb{font-size:14px;padding:9px 16px}
+.lk{font-size:13.5px}
+.kp figcaption,figcaption{font-size:12.5px}
+.eyeb{font-size:12.5px}
+nav button{font-size:14px}
+/* 回・年・テーマの帯 */
+.band b{font-size:clamp(24px,4vw,30px)}
+.band em{font-size:clamp(18px,3vw,22px)}
+.band span{font-size:clamp(15px,2.4vw,17px);color:var(--ink);margin-left:0;flex-basis:100%}
+/* 賞の名前：大賞＝金、Ｗｅｂ大賞＝水色、そのほか＝緑 */
+main .entry .pz,main .entry.top .pz{font-size:15px;letter-spacing:.06em;line-height:1.7;color:var(--gr)}
+.pz span{display:block}
+.wno{display:inline-block;min-width:2.2em;margin-right:.5em;padding:1px 0;text-align:center;background:var(--gr);color:#08090a;font-family:var(--go);font-weight:900;font-size:13px;letter-spacing:.04em;vertical-align:2px}
+.pz .a-tai{color:var(--ki)}
+.pz .a-web,.plus.a-web{color:#7cc4ff}
+.pz .a-etc{color:var(--gr)}
 </style>
 
 </head>
@@ -251,9 +310,9 @@ footer dd{margin:0;line-height:1.85}
 
 <nav role="tablist" aria-label="ページ"><div class="nv">
   <button id="d1" role="tab" aria-controls="e1" aria-selected="true">開催案内</button>
-  <button id="d2" role="tab" aria-controls="e2" aria-selected="false">出展校</button>
-  <button id="d4" role="tab" aria-controls="e4" aria-selected="false">昨年の受賞一覧</button>
-  <button id="d5" role="tab" aria-controls="e5" aria-selected="false">以前の大賞</button>
+  <button id="d2" role="tab" aria-controls="e2" aria-selected="false">出展作品</button>
+  <button id="d4" role="tab" aria-controls="e4" aria-selected="false">昨年の受賞</button>
+  <button id="d5" role="tab" aria-controls="e5" aria-selected="false">過去の受賞</button>
 </div></nav>
 
 <main class="w">
@@ -266,7 +325,7 @@ footer dd{margin:0;line-height:1.85}
     <div class="fact"><dt>会場</dt><dd><span class="k1" style="font-size:clamp(17px,2.9vw,22px)">東北工業大学 八木山キャンパス</span><span class="k2">1号館3階　仙台市太白区八木山香澄町35-1<br>地下鉄東西線「八木山動物公園駅」より徒歩約15分</span></dd></div>
     <div class="fact"><dt>当日の進行</dt><dd><ul class="run">
       <li><em>作品発表</em><b>10:55〜16:00</b></li>
-      <li><em>表彰式</em><b>17:00〜17:50</b></li>
+      <li><em>表彰式</em><b>17:00〜</b></li>
     </ul><span class="k2">発表の時刻と表彰式は前後する場合があります。</span></dd></div>
     <div class="fact"><dt>入場</dt><dd><span class="freebig">無料</span></dd></div>
     <div class="fact"><dt>テーマ</dt><dd><span class="k1" style="font-size:clamp(18px,3vw,22px)">『わたし』らしく輝ける住まい</span></dd></div>
@@ -274,55 +333,59 @@ footer dd{margin:0;line-height:1.85}
   </dl>
   <div class="head"><h2>お知らせ</h2><span>NEWS</span></div>
   <ul class="news">
+    <li><time datetime="2026-10-28">2026.10.28</time><span>第32回の出展作品（22作品）のパネルを掲載しました。宮事協Ｗｅｂ大賞のネット投票を受け付けています。あわせて審査員・当日の流れ・表彰の順を更新し、協賛企業・事務所を掲載しました。</span></li>
     <li><time datetime="2026-10-09">2026.10.09</time><span>公式サイトを開設しました。当日の流れ・出展校・表彰・審査員を掲載しています。</span></li>
     <li><time datetime="2026-10-01">2026.10.01</time><span>中学生の参加申込フォーム・保護者同意フォームの受付を始めました。</span></li>
   </ul>
+  <p class="gov"><a href="#vote" data-go="d2">22作品のパネルと、宮事協Ｗｅｂ大賞のネット投票はこちら</a></p>
   <div class="head"><h2>当日の流れ</h2><span>11.14 SAT</span></div>
   <ol class="tt">
     <li><b>10:00</b><span>受付・開場／作品展示の公開</span></li>
-    <li><b>10:30</b><span>開会・主催者挨拶・審査員紹介</span></li>
-    <li class="big"><b>10:55</b><span>作品のプレゼンテーション（公開審査）　午前の部<small>22作品を1作品ずつ発表し、審査員が質問します。午前は6作品です</small></span></li>
+    <li><b>10:30</b><span>開会・主催者挨拶・審査員紹介・課題の説明</span></li>
+    <li class="big"><b>10:55</b><span>作品のプレゼンテーション（公開審査）　午前の部<small>22作品を1作品ずつ発表し、審査員が質問します。午前は6作品です（11:25〜11:30に休憩）</small></span></li>
     <li><b>12:00</b><span>昼休憩<small>この時間も作品展示をご覧いただけます</small></span></li>
-    <li class="big"><b>13:00</b><span>作品のプレゼンテーション　午後の部<small>午後は16作品です。13:50と15:00に休憩をはさみます</small></span></li>
+    <li class="big"><b>13:00</b><span>作品のプレゼンテーション　午後の部<small>午後は16作品です。14:00〜14:10と15:10〜15:20に休憩をはさみます</small></span></li>
     <li><b>16:00</b><span>審査終了・ベストプレゼン賞の投票</span></li>
     <li class="big"><b>17:00</b><span>表彰式<small>審査講評、受賞作品の発表と表彰</small></span></li>
-    <li><b>17:50</b><span>表彰式終了・記念撮影</span></li>
-    <li><b>18:20</b><span>退場<small>会場の都合により、18:20までにご退場ください</small></span></li>
+    <li><b>17:50</b><span>閉式・記念撮影</span></li>
+    <li><b>18:20</b><span>ご退席<small>会場の都合により、18:20までにご退席ください</small></span></li>
   </ol>
-  <p class="fine" style="margin:-18px 0 clamp(26px,4vw,40px)">発表の時刻は前後する場合があります。途中からの入場・退場は自由です。</p>
+  <p class="fine" style="margin:-18px 0 clamp(26px,4vw,40px)">発表は1作品につき発表6分・質疑5分以内です。発表の時刻は前後する場合があります。途中からの入場・退場は自由です。</p>
 
-  <div class="head"><h2>表彰</h2><span>13 AWARDS</span></div>
+  <div class="head"><h2>表彰（予定）</h2><span>13 AWARDS</span></div>
+  <p class="fine" style="margin:-6px 0 14px">大賞は高等学校の部と専門学校・大学校の部から各1作品、そのほかの賞は部を分けず、22作品の中から各1作品を選びます。</p>
   <ul class="aw">
     <li class="top">みやぎ建築未来賞 大賞<small>高等学校の部・専門学校・大学校の部　各1作品</small></li>
     <li>国土交通省東北地方整備局長賞</li>
     <li>宮城県知事賞</li>
     <li>仙台市長賞</li>
-    <li>仙台市教育委員会教育長賞</li>
     <li>宮城県教育委員会教育長賞</li>
+    <li>仙台市教育委員会教育長賞</li>
     <li>東北工業大学 学長賞</li>
     <li>（一社）日本建築士事務所協会連合会 会長賞</li>
     <li>（一社）宮城県建築士事務所協会賛助会 会長賞</li>
     <li>（一社）宮城県建築士事務所協会 仙台支部長賞</li>
-    <li>宮事協Ｗｅｂ大賞<small>Ｗｅｂ投票で決まります</small></li>
+    <li>宮事協Ｗｅｂ大賞<small>22作品から1作品。Ｗｅｂ投票で決まります</small></li>
     <li>ベストプレゼン賞<small>会場のみなさんの投票で決まります</small></li>
   </ul>
   <div class="head"><h2>審査員</h2><span>14 JUDGES</span></div>
   <ul class="jd">
-    <li class="top">審査委員長　東北工業大学 建築学部 建築学科 教授<b>福屋 粧子</b></li>
-    <li>審査委員　国土交通省東北地方整備局 建政部 都市・住宅整備課 課長補佐<b>川口 高雄</b></li>
-    <li>審査委員　宮城県 土木部営繕課 課長<b>玉川 誠</b></li>
-    <li>審査委員　仙台市都市整備局 公共建築住宅部 営繕課 係長<b>板垣 祐太</b></li>
+    <li class="top">審査委員長　東北工業大学 建築学部 建築学科 教授<b>福屋 粧子氏</b></li>
+    <li>国土交通省東北地方整備局 建政部 住宅調整官<b>池田 亘氏</b></li>
+    <li>宮城県 土木部営繕課 技術副参事兼総括課長補佐<b>佐々木 和敏氏</b></li>
+    <li>仙台市都市整備局 公共建築住宅部 営繕課 主幹<b>伊藤 愛明氏</b></li>
     <li>当協会　会長<b>大宮 利一郎</b></li>
     <li>当協会　副会長<b>佐々木 昌喜</b></li>
     <li>当協会　副会長<b>東山 圭</b></li>
     <li>当協会　副会長<b>佐藤 究</b></li>
     <li>当協会　副会長<b>大豆生田 敏男</b></li>
     <li>当協会　副会長<b>栗原 將光</b></li>
-    <li>当協会　理事<b>川口 裕子</b></li>
     <li>当協会　賛助会 会長<b>大場 秀兵</b></li>
     <li>当協会　仙台支部 支部長<b>市場 芳男</b></li>
-    <li>当協会　青年女性部会長<b>髙橋 雷人</b></li>
+    <li>当協会　青年・女性部会 会長<b>髙橋 雷人</b></li>
+    <li>当協会　理事（建築文化推進室長）<b>川口 裕子</b></li>
   </ul>
+  <p class="fine" style="margin:-18px 0 clamp(26px,4vw,40px)">当協会の役員は敬称を略しました。</p>
   <div class="head"><h2>中学生・高校生のみなさんへ</h2><span>FOR STUDENTS</span></div>
   <div class="kids">
     <div>
@@ -353,59 +416,184 @@ footer dd{margin:0;line-height:1.85}
     <li>発表中は、携帯電話の電源をお切りになるか、マナーモードにしてください。</li>
     <li>公共交通機関でのご来場にご協力ください。</li>
   </ul>
+  <div class="head"><h2>協賛企業・事務所</h2><span>47 SPONSORS</span></div>
+  <p class="intro">第32回みやぎ建築未来賞2026は、次の企業・事務所のご協賛によって開かれています。お申し込みの届いた順に掲載しています。</p>
+  <div class="spons">
+    <div><a href="https://furukawa-denki.com/" target="_blank" rel="noopener noreferrer">古川電気工業（株）</a></div>
+    <div><a href="https://www.sight-k.co.jp" target="_blank" rel="noopener noreferrer">サイト工業（株）</a></div>
+    <div><span>大全電機（株）</span></div>
+    <div><span>（株）図設計</span></div>
+    <div><a href="https://www.sanyo-industries.co.jp/tohoku-sys/" target="_blank" rel="noopener noreferrer">（株）三洋工業東北システム</a></div>
+    <div><span>（株）氏家建築設計事務所</span></div>
+    <div><a href="https://www.heian-sendai.co.jp/palace/" target="_blank" rel="noopener noreferrer">（株）あいあーる パレスへいあん</a></div>
+    <div><a href="https://www.taiheidenki.co.jp" target="_blank" rel="noopener noreferrer">太平電気（株）</a></div>
+    <div><a href="https://www.abekensetsu.co.jp/" target="_blank" rel="noopener noreferrer">阿部建設（株）</a></div>
+    <div><a href="https://www.n-elv.co.jp/" target="_blank" rel="noopener noreferrer">ナショナルエレベーター工業（株）</a></div>
+    <div><a href="https://www.fukamatsugumi.co.jp" target="_blank" rel="noopener noreferrer">（株）深松組</a></div>
+    <div><a href="https://www.shineikogei.jp/" target="_blank" rel="noopener noreferrer">真栄工芸（株）</a></div>
+    <div><a href="https://sakurada-archi.co.jp" target="_blank" rel="noopener noreferrer">（株）櫻田建築設計事務所</a></div>
+    <div><a href="https://www.k-isaf.co.jp/" target="_blank" rel="noopener noreferrer">協立塗料（株）</a></div>
+    <div><a href="https://kosekkei.sakura.ne.jp" target="_blank" rel="noopener noreferrer">（株）構建築設計事務所</a></div>
+    <div><span>（株）COS設計</span></div>
+    <div><a href="https://www.sakari.co.jp" target="_blank" rel="noopener noreferrer">（株）盛総合設計</a></div>
+    <div><a href="http://www.kusuyama-arc.co.jp" target="_blank" rel="noopener noreferrer">（株）楠山設計</a></div>
+    <div><a href="https://www.syo-wauzen.co.jp/" target="_blank" rel="noopener noreferrer">（株）昭和羽前建設工業</a></div>
+    <div><a href="https://www.sincol-kys.co.jp" target="_blank" rel="noopener noreferrer">シンコール（株）</a></div>
+    <div><a href="https://www.watahyou.co.jp" target="_blank" rel="noopener noreferrer">ワタヒョウ（株）</a></div>
+    <div><a href="https://www.abepaint.com" target="_blank" rel="noopener noreferrer">（株）阿部塗装工業</a></div>
+    <div><a href="https://www.mitsubishielectric.co.jp/" target="_blank" rel="noopener noreferrer">三菱電機（株）　東北支社</a></div>
+    <div><a href="https://www.hoshizaki-tohoku.co.jp/" target="_blank" rel="noopener noreferrer">ホシザキ東北（株）</a></div>
+    <div><a href="https://abekazu.co.jp" target="_blank" rel="noopener noreferrer">（株）阿部和工務店</a></div>
+    <div><a href="https://www.nigachi.com/" target="_blank" rel="noopener noreferrer">（株）ガーデン二賀地</a></div>
+    <div><a href="https://t-fujiyoshi.com" target="_blank" rel="noopener noreferrer">東北藤吉工業（株）</a></div>
+    <div><a href="https://shusekkei.com/" target="_blank" rel="noopener noreferrer">（株）集建築設計事務所</a></div>
+    <div><a href="https://www.hashimototen.co.jp" target="_blank" rel="noopener noreferrer">（株）橋本店</a></div>
+    <div><a href="https://www.kenken-pc.com" target="_blank" rel="noopener noreferrer">（株）建研　仙台営業所</a></div>
+    <div><span>（株）リョーワ</span></div>
+    <div><a href="http://www.h-architect.com" target="_blank" rel="noopener noreferrer">（株）東山設計</a></div>
+    <div><a href="https://www.ksustech.co.jp" target="_blank" rel="noopener noreferrer">兼松サステック（株）　仙台営業所</a></div>
+    <div><a href="https://www.sugashin-arc.com" target="_blank" rel="noopener noreferrer">（株）菅伸建築設計事務所</a></div>
+    <div><a href="https://www.ksknet.co.jp/nikken/index.aspx" target="_blank" rel="noopener noreferrer">（株）建築資料研究社　日建学院 仙台校</a></div>
+    <div><a href="http://www.asanobousai.jp/" target="_blank" rel="noopener noreferrer">東北浅野防災設備（株）</a></div>
+    <div><a href="https://www.endo-lighting.co.jp/" target="_blank" rel="noopener noreferrer">（株）遠藤照明　仙台営業所</a></div>
+    <div><a href="https://www.fujisash-tohoku.co.jp/" target="_blank" rel="noopener noreferrer">（株）不二サッシ東北</a></div>
+    <div><a href="http://www.samy.co.jp/" target="_blank" rel="noopener noreferrer">（株）サミー工業</a></div>
+    <div><a href="https://www.adoc-tohoku.info/atec" target="_blank" rel="noopener noreferrer">（株）エーテック</a></div>
+    <div><a href="https://www.ky-tec.co.jp" target="_blank" rel="noopener noreferrer">共同カイテック（株）仙台営業所</a></div>
+    <div><a href="https://www.shikaku.co.jp" target="_blank" rel="noopener noreferrer">（株）総合資格　仙台支店</a></div>
+    <div><a href="https://www.tsekei.co.jp/" target="_blank" rel="noopener noreferrer">（有）髙橋建築設計事務所</a></div>
+    <div><a href="https://season1959.hatenablog.com/" target="_blank" rel="noopener noreferrer">シーズン設計一級建築士事務所</a></div>
+    <div><a href="https://www.sopnet.co.jp" target="_blank" rel="noopener noreferrer">（株）関・空間設計</a></div>
+    <div><a href="http://www.ichibakozo.sakura.ne.jp" target="_blank" rel="noopener noreferrer">（株）市場建築構造設計事務所</a></div>
+    <div><a href="https://kesennumakoumuten.com" target="_blank" rel="noopener noreferrer">（株）気仙沼工務店</a></div>
+  </div>
+
   <div class="head"><h2>趣旨</h2><span>創設 1994年</span></div>
   <p class="creed">将来建築設計を目指す高校生や専門学校の学生達に、夢と希望をもって社会に臨んでいただきたい。その願いを込めて、毎年『みやぎ建築未来賞』を開催し、顕彰を行います。</p>
-  <p class="fine">2008年より、従来の「卒展」を市民とともに建築を知る月間の催事に合わせ、顕彰の範囲を広げて継続しています。</p>
+  <p class="fine">建築系の高等学校、専門学校・大学校で学ぶ学生が、住まいや建築について自由な発想で提案し、その成果を展示・発表する作品展です。次世代の建築人材の育成を目的として、公開審査と表彰式を実施します。前身は「卒展」で2008年からは市民に建築の理解を広げる月間キャンペーンの時期にあわせて統合し、顕彰の対象を広げながら発展的に継続しています。</p>
 </section>
 
 <section id="e2" role="tabpanel" aria-labelledby="d2" hidden>
-  <div class="head"><h2>第32回 出展校</h2><span>02 / 04</span></div>
-  <p class="intro">第32回は5校から22作品の出展があります。テーマは『わたし』らしく輝ける住まいです。各作品のプレゼンテーションボードと模型写真は、掲載の準備が整い次第このページでお知らせします。</p>
+  <div class="head"><h2>第32回 出展作品</h2><span>02 / 04</span></div>
+  <p class="intro">第32回は5校から22作品の出展があります。テーマは『わたし』らしく輝ける住まいです。22作品すべてのパネルを掲載します。画像を押すと大きく表示します。学校名と出展者のお名前は載せていません。番号は作品名のあいうえお順で、当日の発表の順ではありません。</p>
   <div class="sc">
     <div><h3>高等学校の部<span>20作品</span></h3><ul><li>宮城県古川工業高等学校<b>5作品</b></li><li>宮城県石巻工業高等学校<b>6作品</b></li><li>仙台市立仙台工業高等学校<b>9作品</b></li></ul></div>
     <div><h3>専門学校・大学校の部<span>2作品</span></h3><ul><li>東北職業能力開発大学校<b>1作品</b></li><li>仙台工科専門学校<b>1作品</b></li></ul></div>
   </div>
+  <div class="head"><h2>協賛企業・事務所</h2><span>47 SPONSORS</span></div>
+  <p class="intro">出展作品と公開審査・表彰式は、次の企業・事務所のご協賛に支えられています。お申し込みの届いた順に掲載しています。</p>
+  <div class="spons">
+    <div><a href="https://furukawa-denki.com/" target="_blank" rel="noopener noreferrer">古川電気工業（株）</a></div>
+    <div><a href="https://www.sight-k.co.jp" target="_blank" rel="noopener noreferrer">サイト工業（株）</a></div>
+    <div><span>大全電機（株）</span></div>
+    <div><span>（株）図設計</span></div>
+    <div><a href="https://www.sanyo-industries.co.jp/tohoku-sys/" target="_blank" rel="noopener noreferrer">（株）三洋工業東北システム</a></div>
+    <div><span>（株）氏家建築設計事務所</span></div>
+    <div><a href="https://www.heian-sendai.co.jp/palace/" target="_blank" rel="noopener noreferrer">（株）あいあーる パレスへいあん</a></div>
+    <div><a href="https://www.taiheidenki.co.jp" target="_blank" rel="noopener noreferrer">太平電気（株）</a></div>
+    <div><a href="https://www.abekensetsu.co.jp/" target="_blank" rel="noopener noreferrer">阿部建設（株）</a></div>
+    <div><a href="https://www.n-elv.co.jp/" target="_blank" rel="noopener noreferrer">ナショナルエレベーター工業（株）</a></div>
+    <div><a href="https://www.fukamatsugumi.co.jp" target="_blank" rel="noopener noreferrer">（株）深松組</a></div>
+    <div><a href="https://www.shineikogei.jp/" target="_blank" rel="noopener noreferrer">真栄工芸（株）</a></div>
+    <div><a href="https://sakurada-archi.co.jp" target="_blank" rel="noopener noreferrer">（株）櫻田建築設計事務所</a></div>
+    <div><a href="https://www.k-isaf.co.jp/" target="_blank" rel="noopener noreferrer">協立塗料（株）</a></div>
+    <div><a href="https://kosekkei.sakura.ne.jp" target="_blank" rel="noopener noreferrer">（株）構建築設計事務所</a></div>
+    <div><span>（株）COS設計</span></div>
+    <div><a href="https://www.sakari.co.jp" target="_blank" rel="noopener noreferrer">（株）盛総合設計</a></div>
+    <div><a href="http://www.kusuyama-arc.co.jp" target="_blank" rel="noopener noreferrer">（株）楠山設計</a></div>
+    <div><a href="https://www.syo-wauzen.co.jp/" target="_blank" rel="noopener noreferrer">（株）昭和羽前建設工業</a></div>
+    <div><a href="https://www.sincol-kys.co.jp" target="_blank" rel="noopener noreferrer">シンコール（株）</a></div>
+    <div><a href="https://www.watahyou.co.jp" target="_blank" rel="noopener noreferrer">ワタヒョウ（株）</a></div>
+    <div><a href="https://www.abepaint.com" target="_blank" rel="noopener noreferrer">（株）阿部塗装工業</a></div>
+    <div><a href="https://www.mitsubishielectric.co.jp/" target="_blank" rel="noopener noreferrer">三菱電機（株）　東北支社</a></div>
+    <div><a href="https://www.hoshizaki-tohoku.co.jp/" target="_blank" rel="noopener noreferrer">ホシザキ東北（株）</a></div>
+    <div><a href="https://abekazu.co.jp" target="_blank" rel="noopener noreferrer">（株）阿部和工務店</a></div>
+    <div><a href="https://www.nigachi.com/" target="_blank" rel="noopener noreferrer">（株）ガーデン二賀地</a></div>
+    <div><a href="https://t-fujiyoshi.com" target="_blank" rel="noopener noreferrer">東北藤吉工業（株）</a></div>
+    <div><a href="https://shusekkei.com/" target="_blank" rel="noopener noreferrer">（株）集建築設計事務所</a></div>
+    <div><a href="https://www.hashimototen.co.jp" target="_blank" rel="noopener noreferrer">（株）橋本店</a></div>
+    <div><a href="https://www.kenken-pc.com" target="_blank" rel="noopener noreferrer">（株）建研　仙台営業所</a></div>
+    <div><span>（株）リョーワ</span></div>
+    <div><a href="http://www.h-architect.com" target="_blank" rel="noopener noreferrer">（株）東山設計</a></div>
+    <div><a href="https://www.ksustech.co.jp" target="_blank" rel="noopener noreferrer">兼松サステック（株）　仙台営業所</a></div>
+    <div><a href="https://www.sugashin-arc.com" target="_blank" rel="noopener noreferrer">（株）菅伸建築設計事務所</a></div>
+    <div><a href="https://www.ksknet.co.jp/nikken/index.aspx" target="_blank" rel="noopener noreferrer">（株）建築資料研究社　日建学院 仙台校</a></div>
+    <div><a href="http://www.asanobousai.jp/" target="_blank" rel="noopener noreferrer">東北浅野防災設備（株）</a></div>
+    <div><a href="https://www.endo-lighting.co.jp/" target="_blank" rel="noopener noreferrer">（株）遠藤照明　仙台営業所</a></div>
+    <div><a href="https://www.fujisash-tohoku.co.jp/" target="_blank" rel="noopener noreferrer">（株）不二サッシ東北</a></div>
+    <div><a href="http://www.samy.co.jp/" target="_blank" rel="noopener noreferrer">（株）サミー工業</a></div>
+    <div><a href="https://www.adoc-tohoku.info/atec" target="_blank" rel="noopener noreferrer">（株）エーテック</a></div>
+    <div><a href="https://www.ky-tec.co.jp" target="_blank" rel="noopener noreferrer">共同カイテック（株）仙台営業所</a></div>
+    <div><a href="https://www.shikaku.co.jp" target="_blank" rel="noopener noreferrer">（株）総合資格　仙台支店</a></div>
+    <div><a href="https://www.tsekei.co.jp/" target="_blank" rel="noopener noreferrer">（有）髙橋建築設計事務所</a></div>
+    <div><a href="https://season1959.hatenablog.com/" target="_blank" rel="noopener noreferrer">シーズン設計一級建築士事務所</a></div>
+    <div><a href="https://www.sopnet.co.jp" target="_blank" rel="noopener noreferrer">（株）関・空間設計</a></div>
+    <div><a href="http://www.ichibakozo.sakura.ne.jp" target="_blank" rel="noopener noreferrer">（株）市場建築構造設計事務所</a></div>
+    <div><a href="https://kesennumakoumuten.com" target="_blank" rel="noopener noreferrer">（株）気仙沼工務店</a></div>
+  </div>
+
+  <div class="vote" id="vote"><div><h3>宮事協Ｗｅｂ大賞　ネット投票</h3><p>宮事協Ｗｅｂ大賞は、（一社）宮城県建築士事務所協会の会員の皆さまの投票で決まります。22作品の中から、いちばん良いと思う作品を1つ選び、お名前と会社名・事務所名を入れて送信してください（おひとり1票）。受付は11月6日（金）23:59までです。各作品の「この作品に投票する」を押すと、その作品を選んだ状態で投票の画面が開きます。ネット投票のほか、これまでどおり紙での投票も行います。結果は11月14日（土）の表彰式で発表します。</p></div><a class="cta" href="#vform">投票する</a></div>
+  <div class="works">
+    <ul class="wl">
+      <li><a class="th" href="img/w26_f2_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_f2_p1_t.jpg" width="452" height="640" loading="lazy" alt="家じゅう、遊び場　～遊びが育む、子どもらしい成長～ のパネル"></a><h4><span class="wno">01</span>家じゅう、遊び場　～遊びが育む、子どもらしい成長～</h4><p class="lk"><a href="img/w26_f2_p1.jpg" target="_blank" rel="noopener">パネル 1／2</a><a href="img/w26_f2_p2.jpg" target="_blank" rel="noopener">パネル 2／2</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E5%AE%B6%E3%81%98%E3%82%85%E3%81%86%E3%80%81%E9%81%8A%E3%81%B3%E5%A0%B4%20%EF%BD%9E%E9%81%8A%E3%81%B3%E3%81%8C%E8%82%B2%E3%82%80%E3%80%81%E5%AD%90%E3%81%A9%E3%82%82%E3%82%89%E3%81%97%E3%81%84%E6%88%90%E9%95%B7%EF%BD%9E" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_f3_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_f3_p1_t.jpg" width="452" height="640" loading="lazy" alt="彩りの丘　～人と自然が寄り添う住まい～ のパネル"></a><h4><span class="wno">02</span>彩りの丘　～人と自然が寄り添う住まい～</h4><p class="lk"><a href="img/w26_f3_p1.jpg" target="_blank" rel="noopener">パネル 1／2</a><a href="img/w26_f3_p2.jpg" target="_blank" rel="noopener">パネル 2／2</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E5%BD%A9%E3%82%8A%E3%81%AE%E4%B8%98%20%EF%BD%9E%E4%BA%BA%E3%81%A8%E8%87%AA%E7%84%B6%E3%81%8C%E5%AF%84%E3%82%8A%E6%B7%BB%E3%81%86%E4%BD%8F%E3%81%BE%E3%81%84%EF%BD%9E" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_s2_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_s2_p1_t.jpg" width="454" height="640" loading="lazy" alt="うみのガラス工房 のパネル"></a><h4><span class="wno">03</span>うみのガラス工房</h4><p class="lk"><a href="img/w26_s2_p1.jpg" target="_blank" rel="noopener">パネル 1／1</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E3%81%86%E3%81%BF%E3%81%AE%E3%82%AC%E3%83%A9%E3%82%B9%E5%B7%A5%E6%88%BF" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_s9_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_s9_p1_t.jpg" width="454" height="640" loading="lazy" alt="記憶をつなぎ、未来を紡ぐ荒浜の家　―人と地域を再びつなぐ建築― のパネル"></a><h4><span class="wno">04</span>記憶をつなぎ、未来を紡ぐ荒浜の家　―人と地域を再びつなぐ建築―</h4><p class="lk"><a href="img/w26_s9_p1.jpg" target="_blank" rel="noopener">パネル 1／1</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E8%A8%98%E6%86%B6%E3%82%92%E3%81%A4%E3%81%AA%E3%81%8E%E3%80%81%E6%9C%AA%E6%9D%A5%E3%82%92%E7%B4%A1%E3%81%90%E8%8D%92%E6%B5%9C%E3%81%AE%E5%AE%B6%20%E2%80%95%E4%BA%BA%E3%81%A8%E5%9C%B0%E5%9F%9F%E3%82%92%E5%86%8D%E3%81%B3%E3%81%A4%E3%81%AA%E3%81%90%E5%BB%BA%E7%AF%89%E2%80%95" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_s8_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_s8_p1_t.jpg" width="454" height="640" loading="lazy" alt="築く居場所 のパネル"></a><h4><span class="wno">05</span>築く居場所</h4><p class="lk"><a href="img/w26_s8_p1.jpg" target="_blank" rel="noopener">パネル 1／1</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E7%AF%89%E3%81%8F%E5%B1%85%E5%A0%B4%E6%89%80" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_i2_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_i2_p1_t.jpg" width="468" height="640" loading="lazy" alt="木舟の記憶　～木で伝える石巻～ のパネル"></a><h4><span class="wno">06</span>木舟の記憶　～木で伝える石巻～</h4><p class="lk"><a href="img/w26_i2_p1.jpg" target="_blank" rel="noopener">パネル 1／2</a><a href="img/w26_i2_p2.jpg" target="_blank" rel="noopener">パネル 2／2</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E6%9C%A8%E8%88%9F%E3%81%AE%E8%A8%98%E6%86%B6%20%EF%BD%9E%E6%9C%A8%E3%81%A7%E4%BC%9D%E3%81%88%E3%82%8B%E7%9F%B3%E5%B7%BB%EF%BD%9E" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_f5_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_f5_p1_t.jpg" width="480" height="640" loading="lazy" alt="自然に憩う のパネル"></a><h4><span class="wno">07</span>自然に憩う</h4><p class="lk"><a href="img/w26_f5_p1.jpg" target="_blank" rel="noopener">パネル 1／2</a><a href="img/w26_f5_p2.jpg" target="_blank" rel="noopener">パネル 2／2</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E8%87%AA%E7%84%B6%E3%81%AB%E6%86%A9%E3%81%86" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_s1_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_s1_p1_t.jpg" width="454" height="640" loading="lazy" alt="“自分”という家 のパネル"></a><h4><span class="wno">08</span>“自分”という家</h4><p class="lk"><a href="img/w26_s1_p1.jpg" target="_blank" rel="noopener">パネル 1／1</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E2%80%9C%E8%87%AA%E5%88%86%E2%80%9D%E3%81%A8%E3%81%84%E3%81%86%E5%AE%B6" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_i1_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_i1_p1_t.jpg" width="452" height="640" loading="lazy" alt="城宅　～王様じゃなくても、城に住む～ のパネル"></a><h4><span class="wno">09</span>城宅　～王様じゃなくても、城に住む～</h4><p class="lk"><a href="img/w26_i1_p1.jpg" target="_blank" rel="noopener">パネル 1／2</a><a href="img/w26_i1_p2.jpg" target="_blank" rel="noopener">パネル 2／2</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E5%9F%8E%E5%AE%85%20%EF%BD%9E%E7%8E%8B%E6%A7%98%E3%81%98%E3%82%83%E3%81%AA%E3%81%8F%E3%81%A6%E3%82%82%E3%80%81%E5%9F%8E%E3%81%AB%E4%BD%8F%E3%82%80%EF%BD%9E" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_i5_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_i5_p1_t.jpg" width="454" height="640" loading="lazy" alt="Study Common　～私らしい距離でつながる住まい～ のパネル"></a><h4><span class="wno">10</span>Study Common　～私らしい距離でつながる住まい～</h4><p class="lk"><a href="img/w26_i5_p1.jpg" target="_blank" rel="noopener">パネル 1／2</a><a href="img/w26_i5_p2.jpg" target="_blank" rel="noopener">パネル 2／2</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=Study%20Common%20%EF%BD%9E%E7%A7%81%E3%82%89%E3%81%97%E3%81%84%E8%B7%9D%E9%9B%A2%E3%81%A7%E3%81%A4%E3%81%AA%E3%81%8C%E3%82%8B%E4%BD%8F%E3%81%BE%E3%81%84%EF%BD%9E" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_f4_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_f4_p1_t.jpg" width="480" height="640" loading="lazy" alt="月とともに、心が住む家　～今日の私に合わせて変化する住まい～ のパネル"></a><h4><span class="wno">11</span>月とともに、心が住む家　～今日の私に合わせて変化する住まい～</h4><p class="lk"><a href="img/w26_f4_p1.jpg" target="_blank" rel="noopener">パネル 1／2</a><a href="img/w26_f4_p2.jpg" target="_blank" rel="noopener">パネル 2／2</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E6%9C%88%E3%81%A8%E3%81%A8%E3%82%82%E3%81%AB%E3%80%81%E5%BF%83%E3%81%8C%E4%BD%8F%E3%82%80%E5%AE%B6%20%EF%BD%9E%E4%BB%8A%E6%97%A5%E3%81%AE%E7%A7%81%E3%81%AB%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E5%A4%89%E5%8C%96%E3%81%99%E3%82%8B%E4%BD%8F%E3%81%BE%E3%81%84%EF%BD%9E" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_s3_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_s3_p1_t.jpg" width="454" height="640" loading="lazy" alt="つくるほど、わたしらしく のパネル"></a><h4><span class="wno">12</span>つくるほど、わたしらしく</h4><p class="lk"><a href="img/w26_s3_p1.jpg" target="_blank" rel="noopener">パネル 1／1</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E3%81%A4%E3%81%8F%E3%82%8B%E3%81%BB%E3%81%A9%E3%80%81%E3%82%8F%E3%81%9F%E3%81%97%E3%82%89%E3%81%97%E3%81%8F" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_i4_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_i4_p1_t.jpg" width="454" height="640" loading="lazy" alt="庭庵　～わたしに還る庭。～ のパネル"></a><h4><span class="wno">13</span>庭庵　～わたしに還る庭。～</h4><p class="lk"><a href="img/w26_i4_p1.jpg" target="_blank" rel="noopener">パネル 1／2</a><a href="img/w26_i4_p2.jpg" target="_blank" rel="noopener">パネル 2／2</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E5%BA%AD%E5%BA%B5%20%EF%BD%9E%E3%82%8F%E3%81%9F%E3%81%97%E3%81%AB%E9%82%84%E3%82%8B%E5%BA%AD%E3%80%82%EF%BD%9E" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_f1_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_f1_p1_t.jpg" width="453" height="640" loading="lazy" alt="凪　―NAGI― のパネル"></a><h4><span class="wno">14</span>凪　―NAGI―</h4><p class="lk"><a href="img/w26_f1_p1.jpg" target="_blank" rel="noopener">パネル 1／2</a><a href="img/w26_f1_p2.jpg" target="_blank" rel="noopener">パネル 2／2</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E5%87%AA%20%E2%80%95NAGI%E2%80%95" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_t1_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_t1_p1_t.jpg" width="452" height="640" loading="lazy" alt="南部曲屋を未来へ繋ぐ　―地域活性化のための認定こども園をつくる― のパネル"></a><h4><span class="wno">15</span>南部曲屋を未来へ繋ぐ　―地域活性化のための認定こども園をつくる―</h4><p class="lk"><a href="img/w26_t1_p1.jpg" target="_blank" rel="noopener">パネル 1／2</a><a href="img/w26_t1_p2.jpg" target="_blank" rel="noopener">パネル 2／2</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E5%8D%97%E9%83%A8%E6%9B%B2%E5%B1%8B%E3%82%92%E6%9C%AA%E6%9D%A5%E3%81%B8%E7%B9%8B%E3%81%90%20%E2%80%95%E5%9C%B0%E5%9F%9F%E6%B4%BB%E6%80%A7%E5%8C%96%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E8%AA%8D%E5%AE%9A%E3%81%93%E3%81%A9%E3%82%82%E5%9C%92%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8B%E2%80%95" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_s4_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_s4_p1_t.jpg" width="454" height="640" loading="lazy" alt="ねこと出会う　～Cafe ToraFuku～ のパネル"></a><h4><span class="wno">16</span>ねこと出会う　～Cafe ToraFuku～</h4><p class="lk"><a href="img/w26_s4_p1.jpg" target="_blank" rel="noopener">パネル 1／1</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E3%81%AD%E3%81%93%E3%81%A8%E5%87%BA%E4%BC%9A%E3%81%86%20%EF%BD%9ECafe%20ToraFuku%EF%BD%9E" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_s6_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_s6_p1_t.jpg" width="454" height="640" loading="lazy" alt="星たち、わたし色 のパネル"></a><h4><span class="wno">17</span>星たち、わたし色</h4><p class="lk"><a href="img/w26_s6_p1.jpg" target="_blank" rel="noopener">パネル 1／1</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E6%98%9F%E3%81%9F%E3%81%A1%E3%80%81%E3%82%8F%E3%81%9F%E3%81%97%E8%89%B2" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_i6_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_i6_p1_t.jpg" width="465" height="640" loading="lazy" alt="勾玉庵　～生きやすい未来のために～ のパネル"></a><h4><span class="wno">18</span>勾玉庵　～生きやすい未来のために～</h4><p class="lk"><a href="img/w26_i6_p1.jpg" target="_blank" rel="noopener">パネル 1／2</a><a href="img/w26_i6_p2.jpg" target="_blank" rel="noopener">パネル 2／2</a><a href="img/w26_i6_m1.jpg" target="_blank" rel="noopener">模型 1</a><a href="img/w26_i6_m2.jpg" target="_blank" rel="noopener">模型 2</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E5%8B%BE%E7%8E%89%E5%BA%B5%20%EF%BD%9E%E7%94%9F%E3%81%8D%E3%82%84%E3%81%99%E3%81%84%E6%9C%AA%E6%9D%A5%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB%EF%BD%9E" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_i3_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_i3_p1_t.jpg" width="450" height="640" loading="lazy" alt="ものうの杜　～お茶とみどりと人が繋がる場所～ のパネル"></a><h4><span class="wno">19</span>ものうの杜　～お茶とみどりと人が繋がる場所～</h4><p class="lk"><a href="img/w26_i3_p1.jpg" target="_blank" rel="noopener">パネル 1／2</a><a href="img/w26_i3_p2.jpg" target="_blank" rel="noopener">パネル 2／2</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E3%82%82%E3%81%AE%E3%81%86%E3%81%AE%E6%9D%9C%20%EF%BD%9E%E3%81%8A%E8%8C%B6%E3%81%A8%E3%81%BF%E3%81%A9%E3%82%8A%E3%81%A8%E4%BA%BA%E3%81%8C%E7%B9%8B%E3%81%8C%E3%82%8B%E5%A0%B4%E6%89%80%EF%BD%9E" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_t2_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_t2_p1_t.jpg" width="640" height="454" loading="lazy" alt="RE：PORT　～変わりながら受け継ぐ～ のパネル"></a><h4><span class="wno">20</span>RE：PORT　～変わりながら受け継ぐ～</h4><p class="lk"><a href="img/w26_t2_p1.jpg" target="_blank" rel="noopener">パネル 1／1</a><a href="img/w26_t2_m1.jpg" target="_blank" rel="noopener">模型 1</a><a href="img/w26_t2_m2.jpg" target="_blank" rel="noopener">模型 2</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=RE%EF%BC%9APORT%20%EF%BD%9E%E5%A4%89%E3%82%8F%E3%82%8A%E3%81%AA%E3%81%8C%E3%82%89%E5%8F%97%E3%81%91%E7%B6%99%E3%81%90%EF%BD%9E" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_s5_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_s5_p1_t.jpg" width="454" height="640" loading="lazy" alt="わたしと共感 のパネル"></a><h4><span class="wno">21</span>わたしと共感</h4><p class="lk"><a href="img/w26_s5_p1.jpg" target="_blank" rel="noopener">パネル 1／1</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E3%82%8F%E3%81%9F%E3%81%97%E3%81%A8%E5%85%B1%E6%84%9F" target="_blank" rel="noopener">この作品に投票する</a></li>
+      <li><a class="th" href="img/w26_s7_p1.jpg" target="_blank" rel="noopener"><img src="img/w26_s7_p1_t.jpg" width="454" height="640" loading="lazy" alt="私らしく輝く助け合う住まい のパネル"></a><h4><span class="wno">22</span>私らしく輝く助け合う住まい</h4><p class="lk"><a href="img/w26_s7_p1.jpg" target="_blank" rel="noopener">パネル 1／1</a></p><a class="vb" href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?usp=pp_url&amp;entry.1229099076=%E7%A7%81%E3%82%89%E3%81%97%E3%81%8F%E8%BC%9D%E3%81%8F%E5%8A%A9%E3%81%91%E5%90%88%E3%81%86%E4%BD%8F%E3%81%BE%E3%81%84" target="_blank" rel="noopener">この作品に投票する</a></li>
+    </ul>
+  </div>
+  <div class="head" id="vform"><h2>宮事協Ｗｅｂ大賞　投票</h2><span>VOTE</span></div>
+  <div class="vfw"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform?embedded=true" title="宮事協Ｗｅｂ大賞の投票" loading="lazy"></iframe></div>
+  <p class="fine">画面が表示されないときは、<a href="https://docs.google.com/forms/d/e/1FAIpQLSeCSS2bh8ZQdcPZ02IdWqcnSzsSmDYYvgNFl8tLmcFzApFuZw/viewform" target="_blank" rel="noopener">投票の画面を別に開く</a>から投票してください。</p>
 </section>
 
 <section id="e4" role="tabpanel" aria-labelledby="d4" hidden>
   <div class="head"><h2>第31回 2025年　受賞一覧</h2><span>03 / 04</span></div>
-  <p class="intro">テーマ『愛を感じる住まい』／2025年11月15日（土）　東北学院大学 五橋キャンパス 404教室。大賞を先頭に、賞の序列の順で掲げます。学校名までの掲載とし、出展者のお名前は載せていません。</p>
+  <p class="intro">テーマ『愛を感じる住まい』／2025年11月15日（土）　東北学院大学 五橋キャンパス 404教室。受賞10作品を、大賞を先頭に賞の序列の順で、パネルと模型の写真とともに掲げます。画像を押すと大きく開きます。学校名までの掲載とし、出展者のお名前は載せていません。</p>
 
-  <div class="band"><b>第31回</b><em>2025</em><span>テーマ『愛を感じる住まい』</span></div>
-  <div class="entry top">
-    <p class="pz">みやぎ建築未来賞 大賞（高等学校の部）／宮事協Ｗｅｂ大賞（高等学校の部）</p>
-    <h3 class="wn">六六大樹　～六で彩るじゃぱんらいふ～</h3>
-    <p class="sch">宮城県石巻工業高等学校 建築科</p>
-    <div class="plates">
-      <figure><img src="img/a01_p1.jpg" width="1160" height="1637" alt="六六大樹 パネル 左"><figcaption>パネル 1／2</figcaption></figure>
-      <figure><img src="img/a01_p2.jpg" width="1160" height="1637" alt="六六大樹 パネル 右"><figcaption>パネル 2／2</figcaption></figure>
-    </div>
-    <div class="plates mini">
-      <figure><img src="img/a01_m3.jpg" width="760" height="570" loading="lazy" alt="六六大樹 模型"><figcaption>模型</figcaption></figure>
-      <figure><img src="img/a01_m4.jpg" width="760" height="570" loading="lazy" alt="六六大樹 模型"><figcaption>模型</figcaption></figure>
-    </div>
+  <div class="band"><b>当日の様子</b><em>2025</em><span>2025年11月15日（土）　東北学院大学 五橋キャンパス</span></div>
+  <div class="plates scene">
+    <figure><a href="img/g25_g01.jpg" target="_blank" rel="noopener"><img src="img/g25_g01_t.jpg" width="640" height="426" loading="lazy" alt="第31回 開会のあいさつ"></a><figcaption>開会のあいさつ</figcaption></figure>
+    <figure><a href="img/g25_g02.jpg" target="_blank" rel="noopener"><img src="img/g25_g02_t.jpg" width="640" height="426" loading="lazy" alt="第31回 開会前の会場（客席の後方から）"></a><figcaption>開会前の会場（客席の後方から）</figcaption></figure>
+    <figure><a href="img/g25_g03.jpg" target="_blank" rel="noopener"><img src="img/g25_g03_t.jpg" width="640" height="426" loading="lazy" alt="第31回 作品のプレゼンテーション"></a><figcaption>作品のプレゼンテーション</figcaption></figure>
+    <figure><a href="img/g25_g04.jpg" target="_blank" rel="noopener"><img src="img/g25_g04_t.jpg" width="640" height="426" loading="lazy" alt="第31回 作品のプレゼンテーション"></a><figcaption>作品のプレゼンテーション</figcaption></figure>
+    <figure><a href="img/g25_g05.jpg" target="_blank" rel="noopener"><img src="img/g25_g05_t.jpg" width="640" height="426" loading="lazy" alt="第31回 作品のプレゼンテーション"></a><figcaption>作品のプレゼンテーション</figcaption></figure>
+    <figure><a href="img/g25_g06.jpg" target="_blank" rel="noopener"><img src="img/g25_g06_t.jpg" width="640" height="426" loading="lazy" alt="第31回 作品のプレゼンテーション（客席の後方から）"></a><figcaption>作品のプレゼンテーション（客席の後方から）</figcaption></figure>
+    <figure><a href="img/g25_g07.jpg" target="_blank" rel="noopener"><img src="img/g25_g07_t.jpg" width="640" height="426" loading="lazy" alt="第31回 作品の展示"></a><figcaption>作品の展示</figcaption></figure>
+    <figure><a href="img/g25_g08.jpg" target="_blank" rel="noopener"><img src="img/g25_g08_t.jpg" width="640" height="426" loading="lazy" alt="第31回 審査講評"></a><figcaption>審査講評</figcaption></figure>
+    <figure><a href="img/g25_g09.jpg" target="_blank" rel="noopener"><img src="img/g25_g09_t.jpg" width="640" height="426" loading="lazy" alt="第31回 大賞の授与（高等学校の部）"></a><figcaption>大賞の授与（高等学校の部）</figcaption></figure>
+    <figure><a href="img/g25_g10.jpg" target="_blank" rel="noopener"><img src="img/g25_g10_t.jpg" width="640" height="426" loading="lazy" alt="第31回 大賞の授与（専門学校・大学校の部）"></a><figcaption>大賞の授与（専門学校・大学校の部）</figcaption></figure>
+    <figure><a href="img/g25_g11.jpg" target="_blank" rel="noopener"><img src="img/g25_g11_t.jpg" width="640" height="426" loading="lazy" alt="第31回 受賞者の記念撮影"></a><figcaption>受賞者の記念撮影</figcaption></figure>
   </div>
-  <div class="entry top">
-    <p class="pz">みやぎ建築未来賞 大賞（専門学校・大学校の部）／宮事協Ｗｅｂ大賞（専門学校・大学校の部）／ベストプレゼン賞</p>
-    <h3 class="wn">Ｌｅｐａ Ｆｉｅｌｄ　～愛と共創のパーク～</h3>
-    <p class="sch">仙台工科専門学校 建築デザイン科</p>
-    <div class="plates" style="max-width:660px">
-      <figure><img src="img/a02_p1.jpg" width="1160" height="824" loading="lazy" alt="Lepa Field プレゼンテーションボード"><figcaption>プレゼンテーションボード</figcaption></figure>
-    </div>
-    <div class="plates mini">
-      <figure><img src="img/a02_m2.jpg" width="760" height="570" loading="lazy" alt="Lepa Field 模型"><figcaption>模型</figcaption></figure>
-      <figure><img src="img/a02_m3.jpg" width="760" height="570" loading="lazy" alt="Lepa Field 模型"><figcaption>模型</figcaption></figure>
-    </div>
-  </div>
-  <div class="entry"><p class="pz">国土交通省東北地方整備局長賞</p><h3 class="wn">「交流が織りなす第二の家」　～外国人留学生と地域の人を繋ぐ寮～</h3><p class="sch">宮城県古川工業高等学校 建築科</p></div>
-  <div class="entry"><p class="pz">宮城県知事賞</p><h3 class="wn">「ずれ」から生まれる繋がり</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p></div>
-  <div class="entry"><p class="pz">仙台市長賞</p><h3 class="wn">繋ぐ旋律　～音楽を通して伝わる人と人～</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p></div>
-  <div class="entry"><p class="pz">宮城県教育委員会教育長賞</p><h3 class="wn">杜の環</h3><p class="sch">東北電子専門学校 建築科</p></div>
-  <div class="entry"><p class="pz">仙台市教育委員会教育長賞</p><h3 class="wn">sincerity　～愛がそそがれる場所、ここに～</h3><p class="sch">宮城県石巻工業高等学校 建築科</p></div>
-  <div class="entry"><p class="pz">（一社）日本建築士事務所協会連合会 会長賞</p><h3 class="wn">結　～世代をむすぶ、愛のかたち～</h3><p class="sch">宮城県石巻工業高等学校 建築科</p></div>
-  <div class="entry"><p class="pz">（一社）宮城県建築士事務所協会賛助会 会長賞</p><h3 class="wn">Café ねこごこち</h3><p class="sch">宮城県白石工業高等学校 建築科</p></div>
-  <div class="entry"><p class="pz">（一社）宮城県建築士事務所協会 仙台支部長賞</p><h3 class="wn">The Chapter House</h3><p class="sch">宮城県石巻工業高等学校 建築科</p></div>
 
+  <div class="band"><b>第31回</b><em>2025</em><span>テーマ『愛を感じる住まい』　受賞10作品</span></div>
+  <div class="entry top"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（高等学校の部）</span><span class="a-web">宮事協Ｗｅｂ大賞（高等学校の部）</span></p><h3 class="wn">六六大樹　～六で彩るじゃぱんらいふ～</h3><p class="sch">宮城県石巻工業高等学校 建築科</p><div class="kp"><figure><a href="img/k25_01_p1.jpg" target="_blank" rel="noopener"><img src="img/k25_01_p1_t.jpg" width="453" height="640" loading="lazy" alt="六六大樹　～六で彩るじゃぱんらいふ～ パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/k25_01_p2.jpg" target="_blank" rel="noopener"><img src="img/k25_01_p2_t.jpg" width="453" height="640" loading="lazy" alt="六六大樹　～六で彩るじゃぱんらいふ～ パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure><figure><a href="img/k25_01_m1.jpg" target="_blank" rel="noopener"><img src="img/k25_01_m1_t.jpg" width="640" height="480" loading="lazy" alt="六六大樹　～六で彩るじゃぱんらいふ～ 模型 1"></a><figcaption>模型 1</figcaption></figure><figure><a href="img/k25_01_m2.jpg" target="_blank" rel="noopener"><img src="img/k25_01_m2_t.jpg" width="640" height="480" loading="lazy" alt="六六大樹　～六で彩るじゃぱんらいふ～ 模型 2"></a><figcaption>模型 2</figcaption></figure><figure><a href="img/k25_01_m3.jpg" target="_blank" rel="noopener"><img src="img/k25_01_m3_t.jpg" width="640" height="480" loading="lazy" alt="六六大樹　～六で彩るじゃぱんらいふ～ 模型 3"></a><figcaption>模型 3</figcaption></figure></div></div>
+  <div class="entry top"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（専門学校・大学校の部）</span><span class="a-web">宮事協Ｗｅｂ大賞（専門学校・大学校の部）</span><span class="a-etc">ベストプレゼン賞</span></p><h3 class="wn">Ｌｅｐａ Ｆｉｅｌｄ　～愛と共創のバ～</h3><p class="sch">仙台工科専門学校 建築デザイン科</p><div class="kp"><figure><a href="img/k25_02_p1.jpg" target="_blank" rel="noopener"><img src="img/k25_02_p1_t.jpg" width="640" height="455" loading="lazy" alt="Ｌｅｐａ Ｆｉｅｌｄ　～愛と共創のバ～ パネル"></a><figcaption>パネル</figcaption></figure><figure><a href="img/k25_02_m1.jpg" target="_blank" rel="noopener"><img src="img/k25_02_m1_t.jpg" width="640" height="480" loading="lazy" alt="Ｌｅｐａ Ｆｉｅｌｄ　～愛と共創のバ～ 模型 1"></a><figcaption>模型 1</figcaption></figure><figure><a href="img/k25_02_m2.jpg" target="_blank" rel="noopener"><img src="img/k25_02_m2_t.jpg" width="640" height="480" loading="lazy" alt="Ｌｅｐａ Ｆｉｅｌｄ　～愛と共創のバ～ 模型 2"></a><figcaption>模型 2</figcaption></figure><figure><a href="img/k25_02_m3.jpg" target="_blank" rel="noopener"><img src="img/k25_02_m3_t.jpg" width="640" height="480" loading="lazy" alt="Ｌｅｐａ Ｆｉｅｌｄ　～愛と共創のバ～ 模型 3"></a><figcaption>模型 3</figcaption></figure><figure><a href="img/k25_02_m4.jpg" target="_blank" rel="noopener"><img src="img/k25_02_m4_t.jpg" width="480" height="640" loading="lazy" alt="Ｌｅｐａ Ｆｉｅｌｄ　～愛と共創のバ～ 模型 4"></a><figcaption>模型 4</figcaption></figure><figure><a href="img/k25_02_m5.jpg" target="_blank" rel="noopener"><img src="img/k25_02_m5_t.jpg" width="640" height="480" loading="lazy" alt="Ｌｅｐａ Ｆｉｅｌｄ　～愛と共創のバ～ 模型 5"></a><figcaption>模型 5</figcaption></figure><figure><a href="img/k25_02_m6.jpg" target="_blank" rel="noopener"><img src="img/k25_02_m6_t.jpg" width="480" height="640" loading="lazy" alt="Ｌｅｐａ Ｆｉｅｌｄ　～愛と共創のバ～ 模型 6"></a><figcaption>模型 6</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-etc">国土交通省東北地方整備局長賞</span></p><h3 class="wn">「交流が織りなす第二の家」　～外国人留学生と地域の人を繋ぐ寮～</h3><p class="sch">宮城県古川工業高等学校 建築科</p><div class="kp"><figure><a href="img/k25_03_p1.jpg" target="_blank" rel="noopener"><img src="img/k25_03_p1_t.jpg" width="452" height="640" loading="lazy" alt="「交流が織りなす第二の家」　～外国人留学生と地域の人を繋ぐ寮～ パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/k25_03_p2.jpg" target="_blank" rel="noopener"><img src="img/k25_03_p2_t.jpg" width="452" height="640" loading="lazy" alt="「交流が織りなす第二の家」　～外国人留学生と地域の人を繋ぐ寮～ パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure><figure><a href="img/k25_03_m1.jpg" target="_blank" rel="noopener"><img src="img/k25_03_m1_t.jpg" width="640" height="427" loading="lazy" alt="「交流が織りなす第二の家」　～外国人留学生と地域の人を繋ぐ寮～ 模型 1"></a><figcaption>模型 1</figcaption></figure><figure><a href="img/k25_03_m2.jpg" target="_blank" rel="noopener"><img src="img/k25_03_m2_t.jpg" width="640" height="427" loading="lazy" alt="「交流が織りなす第二の家」　～外国人留学生と地域の人を繋ぐ寮～ 模型 2"></a><figcaption>模型 2</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-etc">宮城県知事賞</span></p><h3 class="wn">「ずれ」から生まれる繋がり</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p><div class="kp"><figure><a href="img/k25_04_p1.jpg" target="_blank" rel="noopener"><img src="img/k25_04_p1_t.jpg" width="452" height="640" loading="lazy" alt="「ずれ」から生まれる繋がり パネル"></a><figcaption>パネル</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-etc">仙台市長賞</span></p><h3 class="wn">繋ぐ旋律　～音楽を通して伝わる人と人～</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p><div class="kp"><figure><a href="img/k25_05_p1.jpg" target="_blank" rel="noopener"><img src="img/k25_05_p1_t.jpg" width="452" height="640" loading="lazy" alt="繋ぐ旋律　～音楽を通して伝わる人と人～ パネル"></a><figcaption>パネル</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-etc">宮城県教育委員会教育長賞</span></p><h3 class="wn">杜の環</h3><p class="sch">東北電子専門学校 建築科</p><div class="kp"><figure><a href="img/k25_06_p1.jpg" target="_blank" rel="noopener"><img src="img/k25_06_p1_t.jpg" width="480" height="640" loading="lazy" alt="杜の環 パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/k25_06_p2.jpg" target="_blank" rel="noopener"><img src="img/k25_06_p2_t.jpg" width="480" height="640" loading="lazy" alt="杜の環 パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure><figure><a href="img/k25_06_m1.jpg" target="_blank" rel="noopener"><img src="img/k25_06_m1_t.jpg" width="640" height="640" loading="lazy" alt="杜の環 模型 1"></a><figcaption>模型 1</figcaption></figure><figure><a href="img/k25_06_m2.jpg" target="_blank" rel="noopener"><img src="img/k25_06_m2_t.jpg" width="640" height="640" loading="lazy" alt="杜の環 模型 2"></a><figcaption>模型 2</figcaption></figure><figure><a href="img/k25_06_m3.jpg" target="_blank" rel="noopener"><img src="img/k25_06_m3_t.jpg" width="640" height="640" loading="lazy" alt="杜の環 模型 3"></a><figcaption>模型 3</figcaption></figure><figure><a href="img/k25_06_m4.jpg" target="_blank" rel="noopener"><img src="img/k25_06_m4_t.jpg" width="640" height="640" loading="lazy" alt="杜の環 模型 4"></a><figcaption>模型 4</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-etc">仙台市教育委員会教育長賞</span></p><h3 class="wn">sincerity　～愛がそそがれる場所、ここに～</h3><p class="sch">宮城県石巻工業高等学校 建築科</p><div class="kp"><figure><a href="img/k25_07_p1.jpg" target="_blank" rel="noopener"><img src="img/k25_07_p1_t.jpg" width="484" height="640" loading="lazy" alt="sincerity　～愛がそそがれる場所、ここに～ パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/k25_07_p2.jpg" target="_blank" rel="noopener"><img src="img/k25_07_p2_t.jpg" width="452" height="640" loading="lazy" alt="sincerity　～愛がそそがれる場所、ここに～ パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-etc">（一社）日本建築士事務所協会連合会会長賞</span></p><h3 class="wn">結　～世代をむすぶ、愛のかたち～</h3><p class="sch">宮城県石巻工業高等学校 建築科</p><div class="kp"><figure><a href="img/k25_08_p1.jpg" target="_blank" rel="noopener"><img src="img/k25_08_p1_t.jpg" width="453" height="640" loading="lazy" alt="結　～世代をむすぶ、愛のかたち～ パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/k25_08_p2.jpg" target="_blank" rel="noopener"><img src="img/k25_08_p2_t.jpg" width="453" height="640" loading="lazy" alt="結　～世代をむすぶ、愛のかたち～ パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-etc">（一社）宮城県建築士事務所協会賛助会会長賞</span></p><h3 class="wn">Café ねこごこち</h3><p class="sch">宮城県白石工業高等学校 建築科</p><div class="kp"><figure><a href="img/k25_09_p1.jpg" target="_blank" rel="noopener"><img src="img/k25_09_p1_t.jpg" width="452" height="640" loading="lazy" alt="Café ねこごこち パネル"></a><figcaption>パネル</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-etc">（一社）宮城県建築士事務所協会仙台支部長賞</span></p><h3 class="wn">The Chapter House</h3><p class="sch">宮城県石巻工業高等学校 建築科</p><div class="kp"><figure><a href="img/k25_10_p1.jpg" target="_blank" rel="noopener"><img src="img/k25_10_p1_t.jpg" width="464" height="640" loading="lazy" alt="The Chapter House パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/k25_10_p2.jpg" target="_blank" rel="noopener"><img src="img/k25_10_p2_t.jpg" width="470" height="640" loading="lazy" alt="The Chapter House パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure></div></div>
   <h2 class="sponhead">協賛企業</h2>
   <p class="intro">第31回みやぎ建築未来賞2025に、下記の企業・事務所からご協賛をいただきました。</p>
   <div class="spons" data-spon></div>
@@ -413,24 +601,42 @@ footer dd{margin:0;line-height:1.85}
 </section>
 
 <section id="e5" role="tabpanel" aria-labelledby="d5" hidden>
-  <div class="head"><h2>以前の大賞</h2><span>04 / 04</span></div>
-  <p class="intro">第27回2021以降の各回の大賞です。学校名までの掲載とし、出展者のお名前は載せていません。</p>
+  <div class="head"><h2>過去の受賞作品</h2><span>04 / 04</span></div>
+  <p class="intro">第25回2019〜第31回2025の、みやぎ建築未来賞大賞と宮事協Ｗｅｂ大賞（第25回は２５周年特別賞）の作品です。画像を押すと大きく開きます。学校名までの掲載とし、出展者のお名前は載せていません。</p>
 
-  <div class="band"><b>第30回</b><em>2024</em><span>テーマ『○○の家をつくる』（高等学校の部）</span></div>
-  <div class="entry"><p class="pz">大賞　高等学校の部</p><h3 class="wn">ＤＵＥＴ ＨＯＵＳＥ</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p><div class="plates" style="max-width:520px"><figure><img src="img/p24k_p.jpg" width="1000" height="1404" loading="lazy" alt="ＤＵＥＴ ＨＯＵＳＥ パネル"><figcaption>パネル</figcaption></figure></div></div>
-  <div class="entry"><p class="pz">大賞　専門学校・大学校の部</p><h3 class="wn">繋咲荘　～地域活性化のための古民家集会所をつくる～</h3><p class="sch">東北職業能力開発大学校 住居環境科</p><p class="plus">同時受賞　宮事協Ｗｅｂ大賞（専門学校・大学校の部）</p><div class="plates" style="max-width:520px"><figure><img src="img/p24s_p.jpg" width="1000" height="1416" loading="lazy" alt="繋咲荘 パネル"><figcaption>パネル</figcaption></figure><figure><img src="img/p24s_m.jpg" width="700" height="354" loading="lazy" alt="繋咲荘 模型"><figcaption>模型</figcaption></figure></div></div>
+  <div class="band" style="margin-top:30px"><b>第31回</b><em>2025</em><span>テーマ『愛を感じる住まい』</span></div>
+  <div class="entry"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（専門学校・大学校の部）</span><span class="a-web">宮事協Ｗｅｂ大賞（専門学校・大学校の部）</span></p><h3 class="wn">Ｌｅｐａ Ｆｉｅｌｄ　～愛と共創のバ～</h3><p class="sch">仙台工科専門学校 建築デザイン科</p><div class="kp"><figure><a href="img/o31_1_p1.jpg" target="_blank" rel="noopener"><img src="img/o31_1_p1_t.jpg" width="640" height="455" loading="lazy" alt="Ｌｅｐａ Ｆｉｅｌｄ　～愛と共創のバ～ パネル"></a><figcaption>パネル</figcaption></figure><figure><a href="img/o31_1_m1.jpg" target="_blank" rel="noopener"><img src="img/o31_1_m1_t.jpg" width="640" height="480" loading="lazy" alt="Ｌｅｐａ Ｆｉｅｌｄ　～愛と共創のバ～ 模型 1"></a><figcaption>模型 1</figcaption></figure><figure><a href="img/o31_1_m2.jpg" target="_blank" rel="noopener"><img src="img/o31_1_m2_t.jpg" width="640" height="480" loading="lazy" alt="Ｌｅｐａ Ｆｉｅｌｄ　～愛と共創のバ～ 模型 2"></a><figcaption>模型 2</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（高等学校の部）</span><span class="a-web">宮事協Ｗｅｂ大賞（高等学校の部）</span></p><h3 class="wn">六六大樹　～六で彩るじゃぱんらいふ～</h3><p class="sch">宮城県石巻工業高等学校 建築科</p><div class="kp"><figure><a href="img/o31_2_p1.jpg" target="_blank" rel="noopener"><img src="img/o31_2_p1_t.jpg" width="453" height="640" loading="lazy" alt="六六大樹　～六で彩るじゃぱんらいふ～ パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/o31_2_p2.jpg" target="_blank" rel="noopener"><img src="img/o31_2_p2_t.jpg" width="453" height="640" loading="lazy" alt="六六大樹　～六で彩るじゃぱんらいふ～ パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure><figure><a href="img/o31_2_m1.jpg" target="_blank" rel="noopener"><img src="img/o31_2_m1_t.jpg" width="640" height="480" loading="lazy" alt="六六大樹　～六で彩るじゃぱんらいふ～ 模型 1"></a><figcaption>模型 1</figcaption></figure></div></div>
 
-  <div class="band" style="margin-top:30px"><b>第29回</b><em>2023</em></div>
-  <div class="entry"><p class="pz">大賞　高等学校の部</p><h3 class="wn">幸せ満タンステーション</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p><div class="plates" style="max-width:520px"><figure><img src="img/p23k_p.jpg" width="1000" height="1411" loading="lazy" alt="幸せ満タンステーション パネル"><figcaption>パネル</figcaption></figure></div></div>
-  <div class="entry"><p class="pz">大賞　専門学校・大学校の部</p><h3 class="wn">異食館　～再出発！杜の都　旧配送センター～</h3><p class="sch">東北文化学園専門学校 インテリア科</p><p class="plus">同時受賞　宮事協Ｗｅｂ大賞（専門学校・大学校の部）</p><div class="plates" style="max-width:520px"><figure><img src="img/p23s_p.jpg" width="1000" height="707" loading="lazy" alt="異食館 パネル"><figcaption>パネル</figcaption></figure></div></div>
+  <div class="band" style="margin-top:30px"><b>第30回</b><em>2024</em><span>テーマ地域活性化のための『○○をつくる』（専門学校・大学校の部）／『○○の家をつくる』（高等学校の部）</span></div>
+  <div class="entry"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（専門学校・大学校の部）</span><span class="a-web">宮事協Ｗｅｂ大賞（専門学校・大学校の部）</span></p><h3 class="wn">繋咲荘　～地域活性化のための古民家集会所をつくる～</h3><p class="sch">東北職業能力開発大学校 住居環境科</p><div class="kp"><figure><a href="img/o30_1_p1.jpg" target="_blank" rel="noopener"><img src="img/o30_1_p1_t.jpg" width="452" height="640" loading="lazy" alt="繋咲荘　～地域活性化のための古民家集会所をつくる～ パネル"></a><figcaption>パネル</figcaption></figure><figure><a href="img/o30_1_m1.jpg" target="_blank" rel="noopener"><img src="img/o30_1_m1_t.jpg" width="640" height="471" loading="lazy" alt="繋咲荘　～地域活性化のための古民家集会所をつくる～ 模型 1"></a><figcaption>模型 1</figcaption></figure><figure><a href="img/o30_1_m2.jpg" target="_blank" rel="noopener"><img src="img/o30_1_m2_t.jpg" width="640" height="471" loading="lazy" alt="繋咲荘　～地域活性化のための古民家集会所をつくる～ 模型 2"></a><figcaption>模型 2</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（高等学校の部）</span></p><h3 class="wn">ＤＵＥＴ ＨＯＵＳＥ</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p><div class="kp"><figure><a href="img/o30_2_p1.jpg" target="_blank" rel="noopener"><img src="img/o30_2_p1_t.jpg" width="456" height="640" loading="lazy" alt="ＤＵＥＴ ＨＯＵＳＥ パネル"></a><figcaption>パネル</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-web">宮事協Ｗｅｂ大賞（高等学校の部）</span><span class="a-etc">３０周年記念特別賞</span></p><h3 class="wn">ハニカム健康プロジェクト　～地域と築く健康な家をつくる～</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p><div class="kp"><figure><a href="img/o30_3_p1.jpg" target="_blank" rel="noopener"><img src="img/o30_3_p1_t.jpg" width="456" height="640" loading="lazy" alt="ハニカム健康プロジェクト　～地域と築く健康な家をつくる～ パネル"></a><figcaption>パネル</figcaption></figure></div></div>
 
-  <div class="band" style="margin-top:30px"><b>第28回</b><em>2022</em></div>
-  <div class="entry"><p class="pz">大賞　高等学校の部</p><h3 class="wn">環　～未来を育てる～</h3><p class="sch">宮城県白石工業高等学校 建築科</p><div class="plates" style="max-width:520px"><figure><img src="img/p22k_p.jpg" width="846" height="1195" loading="lazy" alt="環　～未来を育てる～ パネル"><figcaption>パネル</figcaption></figure></div></div>
-  <div class="entry"><p class="pz">大賞　専門学校・大学校の部</p><h3 class="wn">圧倒的拠所</h3><p class="sch">東北文化学園専門学校 インテリア科</p><p class="plus">同時受賞　宮事協Ｗｅｂ大賞（専門学校・大学校の部）</p><div class="plates" style="max-width:520px"><figure><img src="img/p22s_p.jpg" width="1000" height="707" loading="lazy" alt="圧倒的拠所 パネル"><figcaption>パネル</figcaption></figure></div></div>
+  <div class="band" style="margin-top:30px"><b>第29回</b><em>2023</em><span>テーマ『リノベーション』ー地球と環境を考えるー</span></div>
+  <div class="entry"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（専門学校・大学校の部）</span><span class="a-web">宮事協Ｗｅｂ大賞（専門学校・大学校の部）</span></p><h3 class="wn">異食館　～再出発！杜の都　旧配送センター～</h3><p class="sch">東北文化学園専門学校 インテリア科</p><div class="kp"><figure><a href="img/o29_1_p1.jpg" target="_blank" rel="noopener"><img src="img/o29_1_p1_t.jpg" width="640" height="452" loading="lazy" alt="異食館　～再出発！杜の都　旧配送センター～ パネル"></a><figcaption>パネル</figcaption></figure><figure><a href="img/o29_1_m1.jpg" target="_blank" rel="noopener"><img src="img/o29_1_m1_t.jpg" width="640" height="470" loading="lazy" alt="異食館　～再出発！杜の都　旧配送センター～ 模型 1"></a><figcaption>模型 1</figcaption></figure><figure><a href="img/o29_1_m2.jpg" target="_blank" rel="noopener"><img src="img/o29_1_m2_t.jpg" width="640" height="470" loading="lazy" alt="異食館　～再出発！杜の都　旧配送センター～ 模型 2"></a><figcaption>模型 2</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（高等学校の部）</span></p><h3 class="wn">幸せ満タンステーション</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p><div class="kp"><figure><a href="img/o29_2_p1.jpg" target="_blank" rel="noopener"><img src="img/o29_2_p1_t.jpg" width="454" height="640" loading="lazy" alt="幸せ満タンステーション パネル"></a><figcaption>パネル</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-web">宮事協Ｗｅｂ大賞（高等学校の部）</span></p><h3 class="wn">廃線危機へのアプローチ　～四季が魅せる表情～</h3><p class="sch">宮城県古川工業高等学校 建築科</p><div class="kp"><figure><a href="img/o29_3_p1.jpg" target="_blank" rel="noopener"><img src="img/o29_3_p1_t.jpg" width="456" height="640" loading="lazy" alt="廃線危機へのアプローチ　～四季が魅せる表情～ パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/o29_3_p2.jpg" target="_blank" rel="noopener"><img src="img/o29_3_p2_t.jpg" width="456" height="640" loading="lazy" alt="廃線危機へのアプローチ　～四季が魅せる表情～ パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure></div></div>
+
+  <div class="band" style="margin-top:30px"><b>第28回</b><em>2022</em><span>テーマ『ＳＤＧｓと建築』</span></div>
+  <div class="entry"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（専門学校・大学校の部）</span><span class="a-web">宮事協Ｗｅｂ大賞（専門学校・大学校の部）</span></p><h3 class="wn">圧倒的拠所</h3><p class="sch">東北文化学園専門学校 インテリア科</p><div class="kp"><figure><a href="img/o28_1_p1.jpg" target="_blank" rel="noopener"><img src="img/o28_1_p1_t.jpg" width="640" height="452" loading="lazy" alt="圧倒的拠所 パネル"></a><figcaption>パネル</figcaption></figure><figure><a href="img/o28_1_m1.jpg" target="_blank" rel="noopener"><img src="img/o28_1_m1_t.jpg" width="640" height="470" loading="lazy" alt="圧倒的拠所 模型 1"></a><figcaption>模型 1</figcaption></figure><figure><a href="img/o28_1_m2.jpg" target="_blank" rel="noopener"><img src="img/o28_1_m2_t.jpg" width="640" height="470" loading="lazy" alt="圧倒的拠所 模型 2"></a><figcaption>模型 2</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（高等学校の部）</span></p><h3 class="wn">環　～未来を育てる～</h3><p class="sch">宮城県白石工業高等学校 建築科</p><div class="kp"><figure><a href="img/o28_2_p1.jpg" target="_blank" rel="noopener"><img src="img/o28_2_p1_t.jpg" width="437" height="640" loading="lazy" alt="環　～未来を育てる～ パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/o28_2_p2.jpg" target="_blank" rel="noopener"><img src="img/o28_2_p2_t.jpg" width="436" height="640" loading="lazy" alt="環　～未来を育てる～ パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-web">宮事協Ｗｅｂ大賞（高等学校の部）</span></p><h3 class="wn">女の人が働きやすい社会へ</h3><p class="sch">宮城県古川工業高等学校 建築科</p><div class="kp"><figure><a href="img/o28_3_p1.jpg" target="_blank" rel="noopener"><img src="img/o28_3_p1_t.jpg" width="456" height="640" loading="lazy" alt="女の人が働きやすい社会へ パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/o28_3_p2.jpg" target="_blank" rel="noopener"><img src="img/o28_3_p2_t.jpg" width="456" height="640" loading="lazy" alt="女の人が働きやすい社会へ パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure></div></div>
 
   <div class="band" style="margin-top:30px"><b>第27回</b><em>2021</em><span>テーマ『ＳＤＧｓと建築』</span></div>
-  <div class="entry"><p class="pz">大賞　高等学校の部</p><h3 class="wn">Ｉｎｔｅｒａｃｔ ｃｈｉｌｄ</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p><div class="plates" style="max-width:520px"><figure><img src="img/p21k_p.jpg" width="1000" height="750" loading="lazy" alt="Ｉｎｔｅｒａｃｔ ｃｈｉｌｄ パネル"><figcaption>パネル</figcaption></figure></div></div>
-  <div class="entry"><p class="pz">大賞　専門学校・大学校の部</p><h3 class="wn">百間長屋</h3><p class="sch">東北文化学園専門学校 インテリア科</p><p class="plus">同時受賞　宮事協Ｗｅｂ大賞（専門学校・大学校の部）</p><div class="plates" style="max-width:520px"><figure><img src="img/p21s_p.jpg" width="1000" height="709" loading="lazy" alt="百間長屋 パネル"><figcaption>パネル</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（専門学校・大学校の部）</span><span class="a-web">宮事協Ｗｅｂ大賞（専門学校・大学校の部）</span></p><h3 class="wn">百間長屋</h3><p class="sch">東北文化学園専門学校 インテリア科</p><div class="kp"><figure><a href="img/o27_1_p1.jpg" target="_blank" rel="noopener"><img src="img/o27_1_p1_t.jpg" width="640" height="454" loading="lazy" alt="百間長屋 パネル"></a><figcaption>パネル</figcaption></figure><figure><a href="img/o27_1_m1.jpg" target="_blank" rel="noopener"><img src="img/o27_1_m1_t.jpg" width="640" height="470" loading="lazy" alt="百間長屋 模型 1"></a><figcaption>模型 1</figcaption></figure><figure><a href="img/o27_1_m2.jpg" target="_blank" rel="noopener"><img src="img/o27_1_m2_t.jpg" width="640" height="470" loading="lazy" alt="百間長屋 模型 2"></a><figcaption>模型 2</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（高等学校の部）</span></p><h3 class="wn">Ｉｎｔｅｒａｃｔ ｃｈｉｌｄ</h3><p class="sch">仙台市立仙台工業高等学校 建築科</p><div class="kp"><figure><a href="img/o27_2_p1.jpg" target="_blank" rel="noopener"><img src="img/o27_2_p1_t.jpg" width="480" height="640" loading="lazy" alt="Ｉｎｔｅｒａｃｔ ｃｈｉｌｄ パネル"></a><figcaption>パネル</figcaption></figure><figure><a href="img/o27_2_m1.jpg" target="_blank" rel="noopener"><img src="img/o27_2_m1_t.jpg" width="640" height="477" loading="lazy" alt="Ｉｎｔｅｒａｃｔ ｃｈｉｌｄ 模型 1"></a><figcaption>模型 1</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-web">宮事協Ｗｅｂ大賞（高等学校の部）</span></p><h3 class="wn">Cafair　～世界と小さい繋がり～</h3><p class="sch">宮城県石巻工業高等学校 建築科</p><div class="kp"><figure><a href="img/o27_3_p1.jpg" target="_blank" rel="noopener"><img src="img/o27_3_p1_t.jpg" width="460" height="640" loading="lazy" alt="Cafair　～世界と小さい繋がり～ パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/o27_3_p2.jpg" target="_blank" rel="noopener"><img src="img/o27_3_p2_t.jpg" width="460" height="640" loading="lazy" alt="Cafair　～世界と小さい繋がり～ パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure><figure><a href="img/o27_3_m1.jpg" target="_blank" rel="noopener"><img src="img/o27_3_m1_t.jpg" width="640" height="505" loading="lazy" alt="Cafair　～世界と小さい繋がり～ 模型 1"></a><figcaption>模型 1</figcaption></figure><figure><a href="img/o27_3_m2.jpg" target="_blank" rel="noopener"><img src="img/o27_3_m2_t.jpg" width="640" height="505" loading="lazy" alt="Cafair　～世界と小さい繋がり～ 模型 2"></a><figcaption>模型 2</figcaption></figure></div></div>
+
+  <div class="band" style="margin-top:30px"><b>第26回</b><em>2020</em><span>テーマ『生きる』～備えある建築～</span></div>
+  <div class="entry"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（専門学校・大学校の部）</span><span class="a-web">宮事協Ｗｅｂ大賞（専門学校・大学校の部）</span></p><h3 class="wn">来年こそは　Prost!　コロナ第2波に備えて　錦町公園に建つ仮設医療施設</h3><p class="sch">東北電子専門学校 建築科</p><div class="kp"><figure><a href="img/o26_1_p1.jpg" target="_blank" rel="noopener"><img src="img/o26_1_p1_t.jpg" width="460" height="640" loading="lazy" alt="来年こそは　Prost!　コロナ第2波に備えて　錦町公園に建つ仮設医療施設 パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/o26_1_p2.jpg" target="_blank" rel="noopener"><img src="img/o26_1_p2_t.jpg" width="460" height="640" loading="lazy" alt="来年こそは　Prost!　コロナ第2波に備えて　錦町公園に建つ仮設医療施設 パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（高等学校の部）</span></p><h3 class="wn">Multiple　～津波に備える～</h3><div class="kp"><figure><a href="img/o26_2_p1.jpg" target="_blank" rel="noopener"><img src="img/o26_2_p1_t.jpg" width="463" height="640" loading="lazy" alt="Multiple　～津波に備える～ パネル"></a><figcaption>パネル</figcaption></figure><figure><a href="img/o26_2_m1.jpg" target="_blank" rel="noopener"><img src="img/o26_2_m1_t.jpg" width="640" height="494" loading="lazy" alt="Multiple　～津波に備える～ 模型 1"></a><figcaption>模型 1</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-web">宮事協Ｗｅｂ大賞（高等学校の部）</span></p><h3 class="wn">こもれびの輪</h3><div class="kp"><figure><a href="img/o26_3_p1.jpg" target="_blank" rel="noopener"><img src="img/o26_3_p1_t.jpg" width="460" height="640" loading="lazy" alt="こもれびの輪 パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/o26_3_p2.jpg" target="_blank" rel="noopener"><img src="img/o26_3_p2_t.jpg" width="460" height="640" loading="lazy" alt="こもれびの輪 パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure><figure><a href="img/o26_3_m1.jpg" target="_blank" rel="noopener"><img src="img/o26_3_m1_t.jpg" width="640" height="505" loading="lazy" alt="こもれびの輪 模型 1"></a><figcaption>模型 1</figcaption></figure><figure><a href="img/o26_3_m2.jpg" target="_blank" rel="noopener"><img src="img/o26_3_m2_t.jpg" width="640" height="505" loading="lazy" alt="こもれびの輪 模型 2"></a><figcaption>模型 2</figcaption></figure></div></div>
+
+  <div class="band" style="margin-top:30px"><b>第25回</b><em>2019</em><span>テーマ『住宅　×　○○』</span></div>
+  <div class="entry"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（専門学校・大学校の部）</span><span class="a-etc">２５周年特別賞（専門学校・大学校の部）</span></p><h3 class="wn">木造の可能性　火星を制する住宅</h3><p class="sch">東北電子専門学校 建築科</p><div class="kp"><figure><a href="img/o25_1_p1.jpg" target="_blank" rel="noopener"><img src="img/o25_1_p1_t.jpg" width="446" height="640" loading="lazy" alt="木造の可能性　火星を制する住宅 パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/o25_1_p2.jpg" target="_blank" rel="noopener"><img src="img/o25_1_p2_t.jpg" width="446" height="640" loading="lazy" alt="木造の可能性　火星を制する住宅 パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure><figure><a href="img/o25_1_m1.jpg" target="_blank" rel="noopener"><img src="img/o25_1_m1_t.jpg" width="640" height="360" loading="lazy" alt="木造の可能性　火星を制する住宅 模型 1"></a><figcaption>模型 1</figcaption></figure><figure><a href="img/o25_1_m2.jpg" target="_blank" rel="noopener"><img src="img/o25_1_m2_t.jpg" width="640" height="360" loading="lazy" alt="木造の可能性　火星を制する住宅 模型 2"></a><figcaption>模型 2</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-tai">みやぎ建築未来賞大賞（高等学校の部）</span></p><h3 class="wn">住宅×幸福　～自然と共存する北欧スタイルの家～</h3><div class="kp"><figure><a href="img/o25_2_p1.jpg" target="_blank" rel="noopener"><img src="img/o25_2_p1_t.jpg" width="457" height="640" loading="lazy" alt="住宅×幸福　～自然と共存する北欧スタイルの家～ パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/o25_2_p2.jpg" target="_blank" rel="noopener"><img src="img/o25_2_p2_t.jpg" width="457" height="640" loading="lazy" alt="住宅×幸福　～自然と共存する北欧スタイルの家～ パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure><figure><a href="img/o25_2_m1.jpg" target="_blank" rel="noopener"><img src="img/o25_2_m1_t.jpg" width="640" height="505" loading="lazy" alt="住宅×幸福　～自然と共存する北欧スタイルの家～ 模型 1"></a><figcaption>模型 1</figcaption></figure><figure><a href="img/o25_2_m2.jpg" target="_blank" rel="noopener"><img src="img/o25_2_m2_t.jpg" width="640" height="505" loading="lazy" alt="住宅×幸福　～自然と共存する北欧スタイルの家～ 模型 2"></a><figcaption>模型 2</figcaption></figure></div></div>
+  <div class="entry"><p class="pz"><span class="a-etc">２５周年特別賞（高等学校の部）</span></p><h3 class="wn">warp</h3><div class="kp"><figure><a href="img/o25_3_p1.jpg" target="_blank" rel="noopener"><img src="img/o25_3_p1_t.jpg" width="640" height="448" loading="lazy" alt="warp パネル 1／2"></a><figcaption>パネル 1／2</figcaption></figure><figure><a href="img/o25_3_p2.jpg" target="_blank" rel="noopener"><img src="img/o25_3_p2_t.jpg" width="640" height="453" loading="lazy" alt="warp パネル 2／2"></a><figcaption>パネル 2／2</figcaption></figure><figure><a href="img/o25_3_m1.jpg" target="_blank" rel="noopener"><img src="img/o25_3_m1_t.jpg" width="640" height="363" loading="lazy" alt="warp 模型 1"></a><figcaption>模型 1</figcaption></figure><figure><a href="img/o25_3_m2.jpg" target="_blank" rel="noopener"><img src="img/o25_3_m2_t.jpg" width="582" height="640" loading="lazy" alt="warp 模型 2"></a><figcaption>模型 2</figcaption></figure></div></div>
 
 </section>
 </main>
@@ -438,8 +644,8 @@ footer dd{margin:0;line-height:1.85}
 <footer><div class="w">
   <dl>
     <dt>主催</dt><dd>一般社団法人 宮城県建築士事務所協会</dd>
-    <dt>共催</dt><dd>一般社団法人 日本建築士事務所協会連合会<br>一般社団法人 宮城県建築士事務所協会賛助会</dd>
-    <dt>後援</dt><dd>国土交通省東北地方整備局・宮城県・仙台市・宮城県教育委員会・仙台市教育委員会・（独）住宅金融支援機構東北支店・（一社）宮城県建設業協会・（一社）宮城県建築士会・（公社）日本建築家協会東北支部・宮城県インテリア設計士協会・（株）建設新聞社・（株）日刊建設通信新聞社東北支店・（株）日本建設新聞社・河北新報社・ｋｈｂ東日本放送・ｔｂｃ東北放送・仙台放送・ミヤギテレビ・ＮＨＫ仙台放送局</dd>
+    <dt>共催</dt><dd>学校法人 東北工業大学<br>一般社団法人 日本建築士事務所協会連合会<br>一般社団法人 宮城県建築士事務所協会賛助会</dd>
+    <dt>後援</dt><dd>国土交通省東北地方整備局・宮城県・仙台市・宮城県教育委員会・仙台市教育委員会・（独）住宅金融支援機構東北支店・（一社）宮城県建設業協会・（一社）宮城県建築士会・（公社）日本建築家協会東北支部・宮城県インテリア設計士協会・（株）建設新聞社・（株）日刊建設通信新聞社 東北支社・河北新報社・ミヤギテレビ・khb東日本放送・tbc東北放送・仙台放送・NHK仙台放送局</dd>
     <dt>問合せ</dt><dd>一般社団法人 宮城県建築士事務所協会<br>〒980-0011　仙台市青葉区上杉二丁目2-40　宮城県建築設計会館<br>TEL 022-223-7330　　FAX 022-223-7319<br>E-Mail <a href="mailto:jimukyoku@miyajikyo.com">jimukyoku@miyajikyo.com</a></dd>
   </dl>
 </div></footer>
@@ -448,7 +654,7 @@ footer dd{margin:0;line-height:1.85}
 "startDate":"2026-11-14T10:30:00+09:00","endDate":"2026-11-14T18:20:00+09:00","url":"https://miyagikentikumiraisyo.github.io/","image":["https://miyagikentikumiraisyo.github.io/img/og.jpg"],"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
 "eventStatus":"https://schema.org/EventScheduled","isAccessibleForFree":true,"description":"第32回みやぎ建築未来賞2026の公開審査と表彰式。宮城県内の高校生・専門学校生・大学校生が、テーマ『わたし』らしく輝ける住まいの作品を発表します。2026年11月14日（土）東北工業大学 八木山キャンパス 1号館3階。入場無料、どなたでも観覧できます。",
 "location":{"@type":"Place","name":"東北工業大学 八木山キャンパス 1号館3階","address":{"@type":"PostalAddress","addressRegion":"宮城県","addressLocality":"仙台市太白区","streetAddress":"八木山香澄町35-1","addressCountry":"JP"}},
-"organizer":{"@type":"Organization","name":"一般社団法人 宮城県建築士事務所協会","telephone":"+81-22-223-7330","email":"jimukyoku@miyajikyo.com","address":{"@type":"PostalAddress","postalCode":"980-0011","addressRegion":"宮城県","addressLocality":"仙台市青葉区","streetAddress":"上杉二丁目2-40 宮城県建築設計会館","addressCountry":"JP"}}}</script>
+"organizer":{"@type":"Organization","name":"一般社団法人 宮城県建築士事務所協会","url":"https://www.miyajikyo.com/","telephone":"+81-22-223-7330","email":"jimukyoku@miyajikyo.com","address":{"@type":"PostalAddress","postalCode":"980-0011","addressRegion":"宮城県","addressLocality":"仙台市青葉区","streetAddress":"上杉二丁目2-40 宮城県建築設計会館","addressCountry":"JP"}}}</script>
 <script id="sdd" type="application/json">[{"name": "(有)環境デザイン工房", "url": ""}, {"name": "(株)櫻田建築設計事務所", "url": "http://sakurada-archi.co.jp"}, {"name": "(株)氏家建築設計事務所", "url": "http://www.ujiie-architect.co.jp/"}, {"name": "(株)菅伸建築設計事務所", "url": "https://www.sugashin-arc.com"}, {"name": "(有)髙橋建築設計事務所", "url": "http://www.tsekei.jp/"}, {"name": "協立塗料(株)", "url": "http://www.k-isaf.co.jp/"}, {"name": "(株)サミー工業", "url": "http://www.samy.co.jp/"}, {"name": "(株)阿部塗装工業", "url": "http://www.abepaint.com/"}, {"name": "(株)エーテック", "url": ""}, {"name": "(株)櫻井防災", "url": ""}, {"name": "大全電機(株)", "url": "http://www.daizen-co.com/"}, {"name": "(株)COS設計", "url": ""}, {"name": "ナショナルエレベーター工業(株)", "url": "http://www.n-elv.co.jp/"}, {"name": "(株)あいあーる　パレスへいあん", "url": "http://www.heian-sendai.co.jp/palace"}, {"name": "ダイキンＨＶＡＣソリューション東北(株)", "url": "http://www.daikin.co.jp/index.html"}, {"name": "(株)堀越", "url": "http://www.horikoshi.info/"}, {"name": "古川電気工業(株)", "url": "http://www.furukawa-denki.com"}, {"name": "(株)斉良工業", "url": ""}, {"name": "(株)図設計", "url": ""}, {"name": "(株)石川設計東北", "url": ""}, {"name": "サイト工業(株)", "url": ""}, {"name": "真栄工芸(株)", "url": "http://www.shineikogei.jp"}, {"name": "シンコール(株)", "url": ""}, {"name": "(株)深松組", "url": "http://www.fukamatsugumi.co.jp/"}, {"name": "東北ポール(株)", "url": "http://www.tohokupole.co.jp/"}, {"name": "(有)菅原防水工業", "url": ""}, {"name": "(株)イズミコンサルティング仙台営業所", "url": ""}, {"name": "装建工業(株)", "url": ""}, {"name": "タカラ工業(株)", "url": ""}, {"name": "(株)楠山設計", "url": "http://kusuyama-arc.co.jp"}, {"name": "日本高圧コンクリート東北(株)東北支社", "url": "http://www.nihonkoatsu.co.jp"}, {"name": "三菱電機(株)東北支社", "url": "http://www.mitsubishielectric.co.jp/"}, {"name": "(株)エネ・グリーン仙台支社", "url": "http://www.enegreen.co.jp/"}, {"name": "(株)盛総合設計", "url": "http://www.sakari.co.jp"}, {"name": "(株)構建築設計事務所", "url": "http://kosekkei.sakura.ne.jp"}, {"name": "(株)橋本店", "url": "http://www.hashimototen.co.jp/"}, {"name": "(株)市場建築構造設計事務所", "url": "http://www.ichibakozo.sakura.ne.jp/"}, {"name": "(株)東山設計", "url": "http://www.h-architect.com"}, {"name": "(株)集建築設計事務所", "url": "https://shusekkei.com/"}, {"name": "(株)三洋工業東北システム", "url": "http://www.sanyo-industries.co.jp/tohoku-sys/"}, {"name": "(株)桂設計", "url": "http://www.katura-arc.com"}, {"name": "(株)淀川製鋼所東北ブロック仙台営業所", "url": ""}, {"name": "(株)昭和羽前建設工業", "url": "https://www.syo-wauzen.co.jp"}, {"name": "太平電気(株)", "url": "http://www.taiheidenki.co.jp/"}, {"name": "(株)リョーワ", "url": "http://www.sendai-ryowa.com/"}, {"name": "(株)村田工務所", "url": "http://www.murata-koumusyo.com"}, {"name": "シーズン設計一級建築士事務所", "url": "https://season1959.hatenablog.com/"}, {"name": "ケイミュー(株)東北営業所", "url": "http://www.kmew.co.jp/"}, {"name": "(株)ミヤックス", "url": "http://www.miyax.jp"}, {"name": "福井コンピュータアーキテクト(株)", "url": "https://archi.fukuicompu.co.jp/"}, {"name": "兼松サステック(株)", "url": "http://www.knn.co.jp/"}]</script>
 <script>
 (function(){
@@ -475,6 +681,9 @@ footer dd{margin:0;line-height:1.85}
       if(e.key==='ArrowRight')n=tb[(i+1)%tb.length];if(e.key==='ArrowLeft')n=tb[(i-1+tb.length)%tb.length];
       if(n){e.preventDefault();n.focus();sw(n.id)}})});
   try{var k=localStorage.getItem('ms-f');if(k&&document.getElementById(k))sw(k)}catch(e){}
+  /* 開催案内から出展作品のタブへ移る */
+  document.querySelectorAll('[data-go]').forEach(function(a){a.addEventListener('click',function(ev){ev.preventDefault();
+    sw(a.getAttribute('data-go'));var v=document.getElementById('vote');if(v)v.scrollIntoView({block:'start'})})});
 })();
 </script>
 </body>
